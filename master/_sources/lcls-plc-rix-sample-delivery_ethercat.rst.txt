@@ -1,0 +1,240 @@
+
+EtherCAT Terminals
+------------------
+
+.. raw:: html
+
+    <ul class="tree">
+
+
+
+      <li>
+    <details open>
+      <summary>
+            <table width="100%">
+      <tr>
+        <td width="10%">
+          ID=1:
+        </td>
+        <td width="75%">Term 1 (EK1200)
+        </td>
+        <td>        </td>
+      </tr>
+      <tr>
+        <td>
+                  </td>
+        <td colspan="2">
+          EK1200-5000 EtherCAT Power supply (2A E-Bus)
+        </td>
+      </tr>
+    </table>
+      </summary>
+      <ul>
+
+            <li>
+                  <table width="100%">
+                <tr>
+                  <td width="10%">
+                    ID=2:
+                  </td>
+                  <td width="75%">Term 2 (EK1110)
+                  </td>
+                  <td>        </td>
+                </tr>
+                <tr>
+                  <td>
+                            </td>
+                  <td colspan="2">
+                    EK1110 EtherCAT extension
+                  </td>
+                </tr>
+              </table>
+            </li>
+
+      </ul>
+    </details>
+  </li>
+
+
+
+      <li>
+    <details open>
+      <summary>
+            <table width="100%">
+      <tr>
+        <td width="10%">
+          ID=3:
+        </td>
+        <td width="75%">Box 3 (EP9128-0021)
+        </td>
+        <td>        </td>
+      </tr>
+      <tr>
+        <td>
+                  </td>
+        <td colspan="2">
+          EP9128-0021 8x EtherCAT junction
+        </td>
+      </tr>
+    </table>
+      </summary>
+      <ul>
+
+            <li>
+                  <table width="100%">
+                <tr>
+                  <td width="10%">
+                    ID=14:
+                  </td>
+                  <td width="75%">4PV_01 (EP1111)
+                  </td>
+                  <td>        </td>
+                </tr>
+                <tr>
+                  <td>
+                            </td>
+                  <td colspan="2">
+                    EP1111-0000 ID-Switch
+                  </td>
+                </tr>
+              </table>
+            </li>
+
+
+            <li>
+                  <table width="100%">
+                <tr>
+                  <td width="10%">
+                    ID=8:
+                  </td>
+                  <td width="75%">Box 8 (EP2338-0001)
+                  </td>
+                  <td>        </td>
+                </tr>
+                <tr>
+                  <td>
+                            </td>
+                  <td colspan="2">
+                    EP2338-0001 8 Ch. Dig. Input/Output 24V, 0,5A, M8
+                  </td>
+                </tr>
+              </table>
+            </li>
+
+
+            <li>
+                  <table width="100%">
+                <tr>
+                  <td width="10%">
+                    ID=16:
+                  </td>
+                  <td width="75%">Term 16 (EP6002-0002)
+                  </td>
+                  <td>        </td>
+                </tr>
+                <tr>
+                  <td>
+                            </td>
+                  <td colspan="2">
+                    EP6002-0002 Interface (RS232/422/485)
+                  </td>
+                </tr>
+              </table>
+            </li>
+
+
+            <li>
+                  <table width="100%">
+                <tr>
+                  <td width="10%">
+                    ID=17:
+                  </td>
+                  <td width="75%">Term 17 (EP9128-1021)
+                  </td>
+                  <td>        </td>
+                </tr>
+                <tr>
+                  <td>
+                            </td>
+                  <td colspan="2">
+                    EP9128-1021 8x EtherCAT junction - Dev A
+                  </td>
+                </tr>
+              </table>
+            </li>
+
+
+            <li>
+              <details open>
+                <summary>
+                      <table width="100%">
+                <tr>
+                  <td width="10%">
+                    ID=5:
+                  </td>
+                  <td width="75%">Term 5 (EP9128-2021)
+                  </td>
+                  <td>        </td>
+                </tr>
+                <tr>
+                  <td>
+                            </td>
+                  <td colspan="2">
+                    EP9128-2021 8x EtherCAT junction - Dev B
+                  </td>
+                </tr>
+              </table>
+                </summary>
+                <ul>
+
+                      <li>
+                            <table width="100%">
+                          <tr>
+                            <td width="10%">
+                              ID=6:
+                            </td>
+                            <td width="75%">Solenoid Pair A (EP1111)
+                            </td>
+                            <td>        </td>
+                          </tr>
+                          <tr>
+                            <td>
+                                      </td>
+                            <td colspan="2">
+                              EP1111-0000 ID-Switch
+                            </td>
+                          </tr>
+                        </table>
+                      </li>
+
+
+                      <li>
+                            <table width="100%">
+                          <tr>
+                            <td width="10%">
+                              ID=7:
+                            </td>
+                            <td width="75%">Solenoid Pair A Digital IO (EP2338-0001)
+                            </td>
+                            <td>        </td>
+                          </tr>
+                          <tr>
+                            <td>
+                                      </td>
+                            <td colspan="2">
+                              EP2338-0001 8 Ch. Dig. Input/Output 24V, 0,5A, M8
+                            </td>
+                          </tr>
+                        </table>
+                      </li>
+
+                </ul>
+              </details>
+            </li>
+
+      </ul>
+    </details>
+  </li>
+
+
+    </ul>

@@ -1,0 +1,58 @@
+
+Links
+-----
+
+.. csv-table::
+    :header: Owner A, Item A, Owner B, Item B
+    :align: center
+
+        sample_delivery Instance, PlcTask Inputs^GVL_SDS.fb_4PortViciValve_01.fbNporValve.stViciSerial.stComIn^D[0], TIID^Device 1 (EtherCAT)^Box 3 (EP9128-0021)^Term 16 (EP6002-0002), COM TxPDO-Map Inputs Channel 2^Data In 0
+        sample_delivery Instance, PlcTask Inputs^GVL_SDS.fb_4PortViciValve_01.fbNporValve.stViciSerial.stComIn^D[10], TIID^Device 1 (EtherCAT)^Box 3 (EP9128-0021)^Term 16 (EP6002-0002), COM TxPDO-Map Inputs Channel 2^Data In 10
+        sample_delivery Instance, PlcTask Inputs^GVL_SDS.fb_4PortViciValve_01.fbNporValve.stViciSerial.stComIn^D[11], TIID^Device 1 (EtherCAT)^Box 3 (EP9128-0021)^Term 16 (EP6002-0002), COM TxPDO-Map Inputs Channel 2^Data In 11
+        sample_delivery Instance, PlcTask Inputs^GVL_SDS.fb_4PortViciValve_01.fbNporValve.stViciSerial.stComIn^D[12], TIID^Device 1 (EtherCAT)^Box 3 (EP9128-0021)^Term 16 (EP6002-0002), COM TxPDO-Map Inputs Channel 2^Data In 12
+        sample_delivery Instance, PlcTask Inputs^GVL_SDS.fb_4PortViciValve_01.fbNporValve.stViciSerial.stComIn^D[13], TIID^Device 1 (EtherCAT)^Box 3 (EP9128-0021)^Term 16 (EP6002-0002), COM TxPDO-Map Inputs Channel 2^Data In 13
+        sample_delivery Instance, PlcTask Inputs^GVL_SDS.fb_4PortViciValve_01.fbNporValve.stViciSerial.stComIn^D[14], TIID^Device 1 (EtherCAT)^Box 3 (EP9128-0021)^Term 16 (EP6002-0002), COM TxPDO-Map Inputs Channel 2^Data In 14
+        sample_delivery Instance, PlcTask Inputs^GVL_SDS.fb_4PortViciValve_01.fbNporValve.stViciSerial.stComIn^D[15], TIID^Device 1 (EtherCAT)^Box 3 (EP9128-0021)^Term 16 (EP6002-0002), COM TxPDO-Map Inputs Channel 2^Data In 15
+        sample_delivery Instance, PlcTask Inputs^GVL_SDS.fb_4PortViciValve_01.fbNporValve.stViciSerial.stComIn^D[16], TIID^Device 1 (EtherCAT)^Box 3 (EP9128-0021)^Term 16 (EP6002-0002), COM TxPDO-Map Inputs Channel 2^Data In 16
+        sample_delivery Instance, PlcTask Inputs^GVL_SDS.fb_4PortViciValve_01.fbNporValve.stViciSerial.stComIn^D[17], TIID^Device 1 (EtherCAT)^Box 3 (EP9128-0021)^Term 16 (EP6002-0002), COM TxPDO-Map Inputs Channel 2^Data In 17
+        sample_delivery Instance, PlcTask Inputs^GVL_SDS.fb_4PortViciValve_01.fbNporValve.stViciSerial.stComIn^D[18], TIID^Device 1 (EtherCAT)^Box 3 (EP9128-0021)^Term 16 (EP6002-0002), COM TxPDO-Map Inputs Channel 2^Data In 18
+        sample_delivery Instance, PlcTask Inputs^GVL_SDS.fb_4PortViciValve_01.fbNporValve.stViciSerial.stComIn^D[19], TIID^Device 1 (EtherCAT)^Box 3 (EP9128-0021)^Term 16 (EP6002-0002), COM TxPDO-Map Inputs Channel 2^Data In 19
+        sample_delivery Instance, PlcTask Inputs^GVL_SDS.fb_4PortViciValve_01.fbNporValve.stViciSerial.stComIn^D[1], TIID^Device 1 (EtherCAT)^Box 3 (EP9128-0021)^Term 16 (EP6002-0002), COM TxPDO-Map Inputs Channel 2^Data In 1
+        sample_delivery Instance, PlcTask Inputs^GVL_SDS.fb_4PortViciValve_01.fbNporValve.stViciSerial.stComIn^D[20], TIID^Device 1 (EtherCAT)^Box 3 (EP9128-0021)^Term 16 (EP6002-0002), COM TxPDO-Map Inputs Channel 2^Data In 20
+        sample_delivery Instance, PlcTask Inputs^GVL_SDS.fb_4PortViciValve_01.fbNporValve.stViciSerial.stComIn^D[21], TIID^Device 1 (EtherCAT)^Box 3 (EP9128-0021)^Term 16 (EP6002-0002), COM TxPDO-Map Inputs Channel 2^Data In 21
+        sample_delivery Instance, PlcTask Inputs^GVL_SDS.fb_4PortViciValve_01.fbNporValve.stViciSerial.stComIn^D[2], TIID^Device 1 (EtherCAT)^Box 3 (EP9128-0021)^Term 16 (EP6002-0002), COM TxPDO-Map Inputs Channel 2^Data In 2
+        sample_delivery Instance, PlcTask Inputs^GVL_SDS.fb_4PortViciValve_01.fbNporValve.stViciSerial.stComIn^D[3], TIID^Device 1 (EtherCAT)^Box 3 (EP9128-0021)^Term 16 (EP6002-0002), COM TxPDO-Map Inputs Channel 2^Data In 3
+        sample_delivery Instance, PlcTask Inputs^GVL_SDS.fb_4PortViciValve_01.fbNporValve.stViciSerial.stComIn^D[4], TIID^Device 1 (EtherCAT)^Box 3 (EP9128-0021)^Term 16 (EP6002-0002), COM TxPDO-Map Inputs Channel 2^Data In 4
+        sample_delivery Instance, PlcTask Inputs^GVL_SDS.fb_4PortViciValve_01.fbNporValve.stViciSerial.stComIn^D[5], TIID^Device 1 (EtherCAT)^Box 3 (EP9128-0021)^Term 16 (EP6002-0002), COM TxPDO-Map Inputs Channel 2^Data In 5
+        sample_delivery Instance, PlcTask Inputs^GVL_SDS.fb_4PortViciValve_01.fbNporValve.stViciSerial.stComIn^D[6], TIID^Device 1 (EtherCAT)^Box 3 (EP9128-0021)^Term 16 (EP6002-0002), COM TxPDO-Map Inputs Channel 2^Data In 6
+        sample_delivery Instance, PlcTask Inputs^GVL_SDS.fb_4PortViciValve_01.fbNporValve.stViciSerial.stComIn^D[7], TIID^Device 1 (EtherCAT)^Box 3 (EP9128-0021)^Term 16 (EP6002-0002), COM TxPDO-Map Inputs Channel 2^Data In 7
+        sample_delivery Instance, PlcTask Inputs^GVL_SDS.fb_4PortViciValve_01.fbNporValve.stViciSerial.stComIn^D[8], TIID^Device 1 (EtherCAT)^Box 3 (EP9128-0021)^Term 16 (EP6002-0002), COM TxPDO-Map Inputs Channel 2^Data In 8
+        sample_delivery Instance, PlcTask Inputs^GVL_SDS.fb_4PortViciValve_01.fbNporValve.stViciSerial.stComIn^D[9], TIID^Device 1 (EtherCAT)^Box 3 (EP9128-0021)^Term 16 (EP6002-0002), COM TxPDO-Map Inputs Channel 2^Data In 9
+        sample_delivery Instance, PlcTask Inputs^GVL_SDS.fb_4PortViciValve_01.fbNporValve.stViciSerial.stComIn^Status, TIID^Device 1 (EtherCAT)^Box 3 (EP9128-0021)^Term 16 (EP6002-0002), COM TxPDO-Map Inputs Channel 2^Status
+        sample_delivery Instance, PlcTask Outputs^GVL_SDS.PURGE_VRC_01_CTL, TIID^Device 1 (EtherCAT)^Box 3 (EP9128-0021)^Term 5 (EP9128-2021)^Solenoid Pair A Digital IO (EP2338-0001), Channel 12^Output
+        sample_delivery Instance, PlcTask Outputs^GVL_SDS.PURGE_VRC_02_CTL, TIID^Device 1 (EtherCAT)^Box 3 (EP9128-0021)^Term 5 (EP9128-2021)^Solenoid Pair A Digital IO (EP2338-0001), Channel 13^Output
+        sample_delivery Instance, PlcTask Outputs^GVL_SDS.SolenoidPairA.q_xDO1, TIID^Device 1 (EtherCAT)^Box 3 (EP9128-0021)^Term 5 (EP9128-2021)^Solenoid Pair A Digital IO (EP2338-0001), Channel 10^Output
+        sample_delivery Instance, PlcTask Outputs^GVL_SDS.SolenoidPairA.q_xDO2, TIID^Device 1 (EtherCAT)^Box 3 (EP9128-0021)^Term 5 (EP9128-2021)^Solenoid Pair A Digital IO (EP2338-0001), Channel 11^Output
+        sample_delivery Instance, PlcTask Outputs^GVL_SDS.fb_4PortViciValve_01.fbNporValve.stViciSerial.stComOut^Ctrl, TIID^Device 1 (EtherCAT)^Box 3 (EP9128-0021)^Term 16 (EP6002-0002), COM RxPDO-Map Outputs Channel 2^Ctrl
+        sample_delivery Instance, PlcTask Outputs^GVL_SDS.fb_4PortViciValve_01.fbNporValve.stViciSerial.stComOut^D[0], TIID^Device 1 (EtherCAT)^Box 3 (EP9128-0021)^Term 16 (EP6002-0002), COM RxPDO-Map Outputs Channel 2^Data Out 0
+        sample_delivery Instance, PlcTask Outputs^GVL_SDS.fb_4PortViciValve_01.fbNporValve.stViciSerial.stComOut^D[10], TIID^Device 1 (EtherCAT)^Box 3 (EP9128-0021)^Term 16 (EP6002-0002), COM RxPDO-Map Outputs Channel 2^Data Out 10
+        sample_delivery Instance, PlcTask Outputs^GVL_SDS.fb_4PortViciValve_01.fbNporValve.stViciSerial.stComOut^D[11], TIID^Device 1 (EtherCAT)^Box 3 (EP9128-0021)^Term 16 (EP6002-0002), COM RxPDO-Map Outputs Channel 2^Data Out 11
+        sample_delivery Instance, PlcTask Outputs^GVL_SDS.fb_4PortViciValve_01.fbNporValve.stViciSerial.stComOut^D[12], TIID^Device 1 (EtherCAT)^Box 3 (EP9128-0021)^Term 16 (EP6002-0002), COM RxPDO-Map Outputs Channel 2^Data Out 12
+        sample_delivery Instance, PlcTask Outputs^GVL_SDS.fb_4PortViciValve_01.fbNporValve.stViciSerial.stComOut^D[13], TIID^Device 1 (EtherCAT)^Box 3 (EP9128-0021)^Term 16 (EP6002-0002), COM RxPDO-Map Outputs Channel 2^Data Out 13
+        sample_delivery Instance, PlcTask Outputs^GVL_SDS.fb_4PortViciValve_01.fbNporValve.stViciSerial.stComOut^D[14], TIID^Device 1 (EtherCAT)^Box 3 (EP9128-0021)^Term 16 (EP6002-0002), COM RxPDO-Map Outputs Channel 2^Data Out 14
+        sample_delivery Instance, PlcTask Outputs^GVL_SDS.fb_4PortViciValve_01.fbNporValve.stViciSerial.stComOut^D[15], TIID^Device 1 (EtherCAT)^Box 3 (EP9128-0021)^Term 16 (EP6002-0002), COM RxPDO-Map Outputs Channel 2^Data Out 15
+        sample_delivery Instance, PlcTask Outputs^GVL_SDS.fb_4PortViciValve_01.fbNporValve.stViciSerial.stComOut^D[16], TIID^Device 1 (EtherCAT)^Box 3 (EP9128-0021)^Term 16 (EP6002-0002), COM RxPDO-Map Outputs Channel 2^Data Out 16
+        sample_delivery Instance, PlcTask Outputs^GVL_SDS.fb_4PortViciValve_01.fbNporValve.stViciSerial.stComOut^D[17], TIID^Device 1 (EtherCAT)^Box 3 (EP9128-0021)^Term 16 (EP6002-0002), COM RxPDO-Map Outputs Channel 2^Data Out 17
+        sample_delivery Instance, PlcTask Outputs^GVL_SDS.fb_4PortViciValve_01.fbNporValve.stViciSerial.stComOut^D[18], TIID^Device 1 (EtherCAT)^Box 3 (EP9128-0021)^Term 16 (EP6002-0002), COM RxPDO-Map Outputs Channel 2^Data Out 18
+        sample_delivery Instance, PlcTask Outputs^GVL_SDS.fb_4PortViciValve_01.fbNporValve.stViciSerial.stComOut^D[19], TIID^Device 1 (EtherCAT)^Box 3 (EP9128-0021)^Term 16 (EP6002-0002), COM RxPDO-Map Outputs Channel 2^Data Out 19
+        sample_delivery Instance, PlcTask Outputs^GVL_SDS.fb_4PortViciValve_01.fbNporValve.stViciSerial.stComOut^D[1], TIID^Device 1 (EtherCAT)^Box 3 (EP9128-0021)^Term 16 (EP6002-0002), COM RxPDO-Map Outputs Channel 2^Data Out 1
+        sample_delivery Instance, PlcTask Outputs^GVL_SDS.fb_4PortViciValve_01.fbNporValve.stViciSerial.stComOut^D[20], TIID^Device 1 (EtherCAT)^Box 3 (EP9128-0021)^Term 16 (EP6002-0002), COM RxPDO-Map Outputs Channel 2^Data Out 20
+        sample_delivery Instance, PlcTask Outputs^GVL_SDS.fb_4PortViciValve_01.fbNporValve.stViciSerial.stComOut^D[21], TIID^Device 1 (EtherCAT)^Box 3 (EP9128-0021)^Term 16 (EP6002-0002), COM RxPDO-Map Outputs Channel 2^Data Out 21
+        sample_delivery Instance, PlcTask Outputs^GVL_SDS.fb_4PortViciValve_01.fbNporValve.stViciSerial.stComOut^D[2], TIID^Device 1 (EtherCAT)^Box 3 (EP9128-0021)^Term 16 (EP6002-0002), COM RxPDO-Map Outputs Channel 2^Data Out 2
+        sample_delivery Instance, PlcTask Outputs^GVL_SDS.fb_4PortViciValve_01.fbNporValve.stViciSerial.stComOut^D[3], TIID^Device 1 (EtherCAT)^Box 3 (EP9128-0021)^Term 16 (EP6002-0002), COM RxPDO-Map Outputs Channel 2^Data Out 3
+        sample_delivery Instance, PlcTask Outputs^GVL_SDS.fb_4PortViciValve_01.fbNporValve.stViciSerial.stComOut^D[4], TIID^Device 1 (EtherCAT)^Box 3 (EP9128-0021)^Term 16 (EP6002-0002), COM RxPDO-Map Outputs Channel 2^Data Out 4
+        sample_delivery Instance, PlcTask Outputs^GVL_SDS.fb_4PortViciValve_01.fbNporValve.stViciSerial.stComOut^D[5], TIID^Device 1 (EtherCAT)^Box 3 (EP9128-0021)^Term 16 (EP6002-0002), COM RxPDO-Map Outputs Channel 2^Data Out 5
+        sample_delivery Instance, PlcTask Outputs^GVL_SDS.fb_4PortViciValve_01.fbNporValve.stViciSerial.stComOut^D[6], TIID^Device 1 (EtherCAT)^Box 3 (EP9128-0021)^Term 16 (EP6002-0002), COM RxPDO-Map Outputs Channel 2^Data Out 6
+        sample_delivery Instance, PlcTask Outputs^GVL_SDS.fb_4PortViciValve_01.fbNporValve.stViciSerial.stComOut^D[7], TIID^Device 1 (EtherCAT)^Box 3 (EP9128-0021)^Term 16 (EP6002-0002), COM RxPDO-Map Outputs Channel 2^Data Out 7
+        sample_delivery Instance, PlcTask Outputs^GVL_SDS.fb_4PortViciValve_01.fbNporValve.stViciSerial.stComOut^D[8], TIID^Device 1 (EtherCAT)^Box 3 (EP9128-0021)^Term 16 (EP6002-0002), COM RxPDO-Map Outputs Channel 2^Data Out 8
+        sample_delivery Instance, PlcTask Outputs^GVL_SDS.fb_4PortViciValve_01.fbNporValve.stViciSerial.stComOut^D[9], TIID^Device 1 (EtherCAT)^Box 3 (EP9128-0021)^Term 16 (EP6002-0002), COM RxPDO-Map Outputs Channel 2^Data Out 9

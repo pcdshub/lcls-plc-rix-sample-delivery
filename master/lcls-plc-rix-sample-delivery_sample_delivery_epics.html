@@ -1,0 +1,683 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Data Types &mdash; pcdshub/lcls-plc-rix-sample-delivery  documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="_static/tree.css?v=837a00b9" />
+      <link rel="stylesheet" type="text/css" href="_static/width.css?v=ab210c7a" />
+
+  
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=5929fcd5"></script>
+      <script src="_static/doctools.js?v=9a2dae69"></script>
+      <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="_static/docs-versions-menu.js?v=3d6a1aea"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="DUTs" href="lcls-plc-rix-sample-delivery_sample_delivery_source.html" />
+    <link rel="prev" title="Settings" href="lcls-plc-rix-sample-delivery_sample_delivery_summary.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            pcdshub/lcls-plc-rix-sample-delivery
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">lcls-plc-rix-sample-delivery</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="lcls-plc-rix-sample-delivery_pragmas.html">Pragmas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lcls-plc-rix-sample-delivery_nc.html">NC Settings</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lcls-plc-rix-sample-delivery_ethercat.html">EtherCAT Terminals</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lcls-plc-rix-sample-delivery_boxes.html">Boxes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lcls-plc-rix-sample-delivery_links.html">Links</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">sample_delivery</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="lcls-plc-rix-sample-delivery_sample_delivery_summary.html">Settings</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lcls-plc-rix-sample-delivery_sample_delivery_summary.html#pragmas">Pragmas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lcls-plc-rix-sample-delivery_sample_delivery_summary.html#libraries">Libraries</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lcls-plc-rix-sample-delivery_sample_delivery_summary.html#symbols">Symbols</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Data Types</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#lcls-twincat-sample-delivery-fb-4portvicivalve">lcls_twincat_sample_delivery.FB_4PortViciValve</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#lcls-twincat-sample-delivery-fb-solenoidpair">lcls_twincat_sample_delivery.FB_SolenoidPair</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#lcls-twincat-sample-delivery-lcls-general-fb-logmessage">lcls_twincat_sample_delivery.LCLS_General.FB_LogMessage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#lcls-twincat-sample-delivery-st-4pvicivalvesamplenames">lcls_twincat_sample_delivery.ST_4PViciValveSampleNames</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#lcls-twincat-sample-delivery-st-vicistatus">lcls_twincat_sample_delivery.ST_ViciStatus</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="#database-records">Database Records</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lcls-plc-rix-sample-delivery_sample_delivery_source.html">DUTs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lcls-plc-rix-sample-delivery_sample_delivery_source.html#gvls">GVLs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lcls-plc-rix-sample-delivery_sample_delivery_source.html#pous">POUs</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">pcdshub/lcls-plc-rix-sample-delivery</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Data Types</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/lcls-plc-rix-sample-delivery_sample_delivery_epics.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="data-types">
+<h1>Data Types<a class="headerlink" href="#data-types" title="Link to this heading"></a></h1>
+<section id="lcls-twincat-sample-delivery-fb-4portvicivalve">
+<h2>lcls_twincat_sample_delivery.FB_4PortViciValve<a class="headerlink" href="#lcls-twincat-sample-delivery-fb-4portvicivalve" title="Link to this heading"></a></h2>
+<table class="docutils align-center">
+<thead>
+<tr class="row-odd"><th class="head"><p>Record</p></th>
+<th class="head"><p>Type</p></th>
+<th class="head"><p>Description</p></th>
+<th class="head"><p>Pragma</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>$(PREFIX):iReqPos</p></td>
+<td><p>longout</p></td>
+<td><p>$(SYMBOL).iReqPos</p></td>
+<td><div class="line-block">
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>$(PREFIX):iReqPos_RBV</p></td>
+<td><p>longin</p></td>
+<td><p>$(SYMBOL).iReqPos</p></td>
+<td><div class="line-block">
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>$(PREFIX):SampleNames:01</p></td>
+<td><p>waveform</p></td>
+<td><p>$(SYMBOL).stSampleNames.s1</p></td>
+<td><div class="line-block">
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>$(PREFIX):SampleNames:01_RBV</p></td>
+<td><p>waveform</p></td>
+<td><p>$(SYMBOL).stSampleNames.s1</p></td>
+<td><div class="line-block">
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>$(PREFIX):SampleNames:02</p></td>
+<td><p>waveform</p></td>
+<td><p>$(SYMBOL).stSampleNames.s2</p></td>
+<td><div class="line-block">
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>$(PREFIX):SampleNames:02_RBV</p></td>
+<td><p>waveform</p></td>
+<td><p>$(SYMBOL).stSampleNames.s2</p></td>
+<td><div class="line-block">
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>$(PREFIX):SampleNames:03</p></td>
+<td><p>waveform</p></td>
+<td><p>$(SYMBOL).stSampleNames.s3</p></td>
+<td><div class="line-block">
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>$(PREFIX):SampleNames:03_RBV</p></td>
+<td><p>waveform</p></td>
+<td><p>$(SYMBOL).stSampleNames.s3</p></td>
+<td><div class="line-block">
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>$(PREFIX):SampleNames:04</p></td>
+<td><p>waveform</p></td>
+<td><p>$(SYMBOL).stSampleNames.s4</p></td>
+<td><div class="line-block">
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>$(PREFIX):SampleNames:04_RBV</p></td>
+<td><p>waveform</p></td>
+<td><p>$(SYMBOL).stSampleNames.s4</p></td>
+<td><div class="line-block">
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="lcls-twincat-sample-delivery-fb-solenoidpair">
+<h2>lcls_twincat_sample_delivery.FB_SolenoidPair<a class="headerlink" href="#lcls-twincat-sample-delivery-fb-solenoidpair" title="Link to this heading"></a></h2>
+<table class="docutils align-center">
+<thead>
+<tr class="row-odd"><th class="head"><p>Record</p></th>
+<th class="head"><p>Type</p></th>
+<th class="head"><p>Description</p></th>
+<th class="head"><p>Pragma</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>$(PREFIX):Debug</p></td>
+<td><p>bo</p></td>
+<td><p>$(SYMBOL).i_xDebug</p></td>
+<td><div class="line-block">
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>$(PREFIX):Debug_RBV</p></td>
+<td><p>bi</p></td>
+<td><p>$(SYMBOL).i_xDebug</p></td>
+<td><div class="line-block">
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>$(PREFIX):Switch</p></td>
+<td><p>bo</p></td>
+<td><p>$(SYMBOL).i_xEpics</p></td>
+<td><div class="line-block">
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>$(PREFIX):Switch_RBV</p></td>
+<td><p>bi</p></td>
+<td><p>$(SYMBOL).i_xEpics</p></td>
+<td><div class="line-block">
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>$(PREFIX):Valve:01:Open</p></td>
+<td><p>bo</p></td>
+<td><p>$(SYMBOL).q_xDO1</p></td>
+<td><div class="line-block">
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>$(PREFIX):Valve:01:Open_RBV</p></td>
+<td><p>bi</p></td>
+<td><p>$(SYMBOL).q_xDO1</p></td>
+<td><div class="line-block">
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>$(PREFIX):Valve:02:Open</p></td>
+<td><p>bo</p></td>
+<td><p>$(SYMBOL).q_xDO2</p></td>
+<td><div class="line-block">
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>$(PREFIX):Valve:02:Open_RBV</p></td>
+<td><p>bi</p></td>
+<td><p>$(SYMBOL).q_xDO2</p></td>
+<td><div class="line-block">
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="lcls-twincat-sample-delivery-lcls-general-fb-logmessage">
+<h2>lcls_twincat_sample_delivery.LCLS_General.FB_LogMessage<a class="headerlink" href="#lcls-twincat-sample-delivery-lcls-general-fb-logmessage" title="Link to this heading"></a></h2>
+<table class="docutils align-center">
+<thead>
+<tr class="row-odd"><th class="head"><p>Record</p></th>
+<th class="head"><p>Type</p></th>
+<th class="head"><p>Description</p></th>
+<th class="head"><p>Pragma</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>$(PREFIX):Reset</p></td>
+<td><p>bo</p></td>
+<td><p>Rising-edge reset of trip</p></td>
+<td><div class="line-block">
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>$(PREFIX):Reset_RBV</p></td>
+<td><p>bi</p></td>
+<td><p>Rising-edge reset of trip</p></td>
+<td><div class="line-block">
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>$(PREFIX):Tripped_RBV</p></td>
+<td><p>bi</p></td>
+<td><p>Log message FB tripped</p></td>
+<td><div class="line-block">
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="lcls-twincat-sample-delivery-st-4pvicivalvesamplenames">
+<h2>lcls_twincat_sample_delivery.ST_4PViciValveSampleNames<a class="headerlink" href="#lcls-twincat-sample-delivery-st-4pvicivalvesamplenames" title="Link to this heading"></a></h2>
+<table class="docutils align-center">
+<thead>
+<tr class="row-odd"><th class="head"><p>Record</p></th>
+<th class="head"><p>Type</p></th>
+<th class="head"><p>Description</p></th>
+<th class="head"><p>Pragma</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>$(PREFIX):01</p></td>
+<td><p>waveform</p></td>
+<td><p>$(SYMBOL).s1</p></td>
+<td><div class="line-block">
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>$(PREFIX):01_RBV</p></td>
+<td><p>waveform</p></td>
+<td><p>$(SYMBOL).s1</p></td>
+<td><div class="line-block">
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>$(PREFIX):02</p></td>
+<td><p>waveform</p></td>
+<td><p>$(SYMBOL).s2</p></td>
+<td><div class="line-block">
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>$(PREFIX):02_RBV</p></td>
+<td><p>waveform</p></td>
+<td><p>$(SYMBOL).s2</p></td>
+<td><div class="line-block">
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>$(PREFIX):03</p></td>
+<td><p>waveform</p></td>
+<td><p>$(SYMBOL).s3</p></td>
+<td><div class="line-block">
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>$(PREFIX):03_RBV</p></td>
+<td><p>waveform</p></td>
+<td><p>$(SYMBOL).s3</p></td>
+<td><div class="line-block">
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>$(PREFIX):04</p></td>
+<td><p>waveform</p></td>
+<td><p>$(SYMBOL).s4</p></td>
+<td><div class="line-block">
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>$(PREFIX):04_RBV</p></td>
+<td><p>waveform</p></td>
+<td><p>$(SYMBOL).s4</p></td>
+<td><div class="line-block">
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="lcls-twincat-sample-delivery-st-vicistatus">
+<h2>lcls_twincat_sample_delivery.ST_ViciStatus<a class="headerlink" href="#lcls-twincat-sample-delivery-st-vicistatus" title="Link to this heading"></a></h2>
+<table class="docutils align-center">
+<thead>
+<tr class="row-odd"><th class="head"><p>Record</p></th>
+<th class="head"><p>Type</p></th>
+<th class="head"><p>Description</p></th>
+<th class="head"><p>Pragma</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>$(PREFIX):CurrentPos_RBV</p></td>
+<td><p>longin</p></td>
+<td><p>$(SYMBOL).iCurrPos</p></td>
+<td><div class="line-block">
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="database-records">
+<h1>Database Records<a class="headerlink" href="#database-records" title="Link to this heading"></a></h1>
+<table class="docutils align-center">
+<thead>
+<tr class="row-odd"><th class="head"><p>Record</p></th>
+<th class="head"><p>Type</p></th>
+<th class="head"><p>Description</p></th>
+<th class="head"><p>Pragma</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>$(PREFIX)LCLSGeneral:GlobalLogTrickleTrip_RBV</p></td>
+<td><p>bi</p></td>
+<td><p>Tripped by overall log count</p></td>
+<td><div class="line-block">
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>$(PREFIX)LCLSGeneral:LogHost_RBV</p></td>
+<td><p>waveform</p></td>
+<td><p>The log host IP address</p></td>
+<td><div class="line-block">
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>$(PREFIX)LCLSGeneral:LogHost</p></td>
+<td><p>waveform</p></td>
+<td><p>The log host IP address</p></td>
+<td><div class="line-block">
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>$(PREFIX)LCLSGeneral:LogPort_RBV</p></td>
+<td><p>longin</p></td>
+<td><p>The log host UDP port</p></td>
+<td><div class="line-block">
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>$(PREFIX)LCLSGeneral:LogPort</p></td>
+<td><p>longout</p></td>
+<td><p>The log host UDP port</p></td>
+<td><div class="line-block">
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>$(PREFIX)LCLSGeneral:LogMessageCount_RBV</p></td>
+<td><p>longin</p></td>
+<td><p>Total log messages on the last cycle</p></td>
+<td><div class="line-block">
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>RIX:SDS:SPR:PURGE:A_RBV</p></td>
+<td><p>bi</p></td>
+<td><p>GVL_SDS.PURGE_VRC_01_CTL</p></td>
+<td><div class="line-block">
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>RIX:SDS:SPR:PURGE:A</p></td>
+<td><p>bo</p></td>
+<td><p>GVL_SDS.PURGE_VRC_01_CTL</p></td>
+<td><div class="line-block">
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>RIX:SDS:SPR:PURGE:B_RBV</p></td>
+<td><p>bi</p></td>
+<td><p>GVL_SDS.PURGE_VRC_02_CTL</p></td>
+<td><div class="line-block">
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>RIX:SDS:SPR:PURGE:B</p></td>
+<td><p>bo</p></td>
+<td><p>GVL_SDS.PURGE_VRC_02_CTL</p></td>
+<td><div class="line-block">
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>RIX:SDS:SPR:A:Debug_RBV</p></td>
+<td><p>bi</p></td>
+<td><p>GVL_SDS.SolenoidPairA.i_xDebug</p></td>
+<td><div class="line-block">
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>RIX:SDS:SPR:A:Debug</p></td>
+<td><p>bo</p></td>
+<td><p>GVL_SDS.SolenoidPairA.i_xDebug</p></td>
+<td><div class="line-block">
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>RIX:SDS:SPR:A:Switch_RBV</p></td>
+<td><p>bi</p></td>
+<td><p>GVL_SDS.SolenoidPairA.i_xEpics</p></td>
+<td><div class="line-block">
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>RIX:SDS:SPR:A:Switch</p></td>
+<td><p>bo</p></td>
+<td><p>GVL_SDS.SolenoidPairA.i_xEpics</p></td>
+<td><div class="line-block">
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>RIX:SDS:SPR:A:Valve:01:Open_RBV</p></td>
+<td><p>bi</p></td>
+<td><p>GVL_SDS.SolenoidPairA.q_xDO1</p></td>
+<td><div class="line-block">
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>RIX:SDS:SPR:A:Valve:01:Open</p></td>
+<td><p>bo</p></td>
+<td><p>GVL_SDS.SolenoidPairA.q_xDO1</p></td>
+<td><div class="line-block">
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>RIX:SDS:SPR:A:Valve:02:Open_RBV</p></td>
+<td><p>bi</p></td>
+<td><p>GVL_SDS.SolenoidPairA.q_xDO2</p></td>
+<td><div class="line-block">
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>RIX:SDS:SPR:A:Valve:02:Open</p></td>
+<td><p>bo</p></td>
+<td><p>GVL_SDS.SolenoidPairA.q_xDO2</p></td>
+<td><div class="line-block">
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>CRIX:SDS:VICI:01:iReqPos_RBV</p></td>
+<td><p>longin</p></td>
+<td><p>GVL_SDS.fb_4PortViciValve_01.iReqPos</p></td>
+<td><div class="line-block">
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>CRIX:SDS:VICI:01:iReqPos</p></td>
+<td><p>longout</p></td>
+<td><p>GVL_SDS.fb_4PortViciValve_01.iReqPos</p></td>
+<td><div class="line-block">
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>CRIX:SDS:VICI:01:SampleNames:01_RBV</p></td>
+<td><p>waveform</p></td>
+<td><p>GVL_SDS.fb_4PortViciValve_01.stSampleNames.s1</p></td>
+<td><div class="line-block">
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>CRIX:SDS:VICI:01:SampleNames:01</p></td>
+<td><p>waveform</p></td>
+<td><p>GVL_SDS.fb_4PortViciValve_01.stSampleNames.s1</p></td>
+<td><div class="line-block">
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>CRIX:SDS:VICI:01:SampleNames:02_RBV</p></td>
+<td><p>waveform</p></td>
+<td><p>GVL_SDS.fb_4PortViciValve_01.stSampleNames.s2</p></td>
+<td><div class="line-block">
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>CRIX:SDS:VICI:01:SampleNames:02</p></td>
+<td><p>waveform</p></td>
+<td><p>GVL_SDS.fb_4PortViciValve_01.stSampleNames.s2</p></td>
+<td><div class="line-block">
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>CRIX:SDS:VICI:01:SampleNames:03_RBV</p></td>
+<td><p>waveform</p></td>
+<td><p>GVL_SDS.fb_4PortViciValve_01.stSampleNames.s3</p></td>
+<td><div class="line-block">
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>CRIX:SDS:VICI:01:SampleNames:03</p></td>
+<td><p>waveform</p></td>
+<td><p>GVL_SDS.fb_4PortViciValve_01.stSampleNames.s3</p></td>
+<td><div class="line-block">
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>CRIX:SDS:VICI:01:SampleNames:04_RBV</p></td>
+<td><p>waveform</p></td>
+<td><p>GVL_SDS.fb_4PortViciValve_01.stSampleNames.s4</p></td>
+<td><div class="line-block">
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>CRIX:SDS:VICI:01:SampleNames:04</p></td>
+<td><p>waveform</p></td>
+<td><p>GVL_SDS.fb_4PortViciValve_01.stSampleNames.s4</p></td>
+<td><div class="line-block">
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="lcls-plc-rix-sample-delivery_sample_delivery_summary.html" class="btn btn-neutral float-left" title="Settings" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="lcls-plc-rix-sample-delivery_sample_delivery_source.html" class="btn btn-neutral float-right" title="DUTs" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2025, SLAC National Accelerator Laboratory.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

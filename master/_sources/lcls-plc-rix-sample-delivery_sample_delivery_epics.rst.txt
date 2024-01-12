@@ -1,0 +1,426 @@
+
+Data Types
+----------
+
+
+    
+lcls_twincat_sample_delivery.FB_4PortViciValve
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. list-table::
+    :header-rows: 1
+    :align: center
+
+    * - Record
+      - Type
+      - Description
+      - Pragma
+    * - $(PREFIX):iReqPos
+      - longout
+      - $(SYMBOL).iReqPos
+      - | io: output
+
+
+    * - $(PREFIX):iReqPos_RBV
+      - longin
+      - $(SYMBOL).iReqPos
+      - | io: output
+
+
+    * - $(PREFIX):SampleNames:01
+      - waveform
+      - $(SYMBOL).stSampleNames.s1
+      - | io: output
+
+
+    * - $(PREFIX):SampleNames:01_RBV
+      - waveform
+      - $(SYMBOL).stSampleNames.s1
+      - | io: output
+
+
+    * - $(PREFIX):SampleNames:02
+      - waveform
+      - $(SYMBOL).stSampleNames.s2
+      - | io: output
+
+
+    * - $(PREFIX):SampleNames:02_RBV
+      - waveform
+      - $(SYMBOL).stSampleNames.s2
+      - | io: output
+
+
+    * - $(PREFIX):SampleNames:03
+      - waveform
+      - $(SYMBOL).stSampleNames.s3
+      - | io: output
+
+
+    * - $(PREFIX):SampleNames:03_RBV
+      - waveform
+      - $(SYMBOL).stSampleNames.s3
+      - | io: output
+
+
+    * - $(PREFIX):SampleNames:04
+      - waveform
+      - $(SYMBOL).stSampleNames.s4
+      - | io: output
+
+
+    * - $(PREFIX):SampleNames:04_RBV
+      - waveform
+      - $(SYMBOL).stSampleNames.s4
+      - | io: output
+
+
+  
+lcls_twincat_sample_delivery.FB_SolenoidPair
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. list-table::
+    :header-rows: 1
+    :align: center
+
+    * - Record
+      - Type
+      - Description
+      - Pragma
+    * - $(PREFIX):Debug
+      - bo
+      - $(SYMBOL).i_xDebug
+      - | io: output
+
+
+    * - $(PREFIX):Debug_RBV
+      - bi
+      - $(SYMBOL).i_xDebug
+      - | io: output
+
+
+    * - $(PREFIX):Switch
+      - bo
+      - $(SYMBOL).i_xEpics
+      - | io: output
+
+
+    * - $(PREFIX):Switch_RBV
+      - bi
+      - $(SYMBOL).i_xEpics
+      - | io: output
+
+
+    * - $(PREFIX):Valve:01:Open
+      - bo
+      - $(SYMBOL).q_xDO1
+      - | io: output
+
+
+    * - $(PREFIX):Valve:01:Open_RBV
+      - bi
+      - $(SYMBOL).q_xDO1
+      - | io: output
+
+
+    * - $(PREFIX):Valve:02:Open
+      - bo
+      - $(SYMBOL).q_xDO2
+      - | io: output
+
+
+    * - $(PREFIX):Valve:02:Open_RBV
+      - bi
+      - $(SYMBOL).q_xDO2
+      - | io: output
+
+
+    
+lcls_twincat_sample_delivery.LCLS_General.FB_LogMessage
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. list-table::
+    :header-rows: 1
+    :align: center
+
+    * - Record
+      - Type
+      - Description
+      - Pragma
+    * - $(PREFIX):Reset
+      - bo
+      - Rising-edge reset of trip
+      - | io: output
+
+
+    * - $(PREFIX):Reset_RBV
+      - bi
+      - Rising-edge reset of trip
+      - | io: output
+
+
+    * - $(PREFIX):Tripped_RBV
+      - bi
+      - Log message FB tripped
+      - | io: input
+
+
+                                     
+lcls_twincat_sample_delivery.ST_4PViciValveSampleNames
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. list-table::
+    :header-rows: 1
+    :align: center
+
+    * - Record
+      - Type
+      - Description
+      - Pragma
+    * - $(PREFIX):01
+      - waveform
+      - $(SYMBOL).s1
+      - | io: output
+
+
+    * - $(PREFIX):01_RBV
+      - waveform
+      - $(SYMBOL).s1
+      - | io: output
+
+
+    * - $(PREFIX):02
+      - waveform
+      - $(SYMBOL).s2
+      - | io: output
+
+
+    * - $(PREFIX):02_RBV
+      - waveform
+      - $(SYMBOL).s2
+      - | io: output
+
+
+    * - $(PREFIX):03
+      - waveform
+      - $(SYMBOL).s3
+      - | io: output
+
+
+    * - $(PREFIX):03_RBV
+      - waveform
+      - $(SYMBOL).s3
+      - | io: output
+
+
+    * - $(PREFIX):04
+      - waveform
+      - $(SYMBOL).s4
+      - | io: output
+
+
+    * - $(PREFIX):04_RBV
+      - waveform
+      - $(SYMBOL).s4
+      - | io: output
+
+
+   
+lcls_twincat_sample_delivery.ST_ViciStatus
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. list-table::
+    :header-rows: 1
+    :align: center
+
+    * - Record
+      - Type
+      - Description
+      - Pragma
+    * - $(PREFIX):CurrentPos_RBV
+      - longin
+      - $(SYMBOL).iCurrPos
+      - | io: input
+
+
+                                   
+Database Records
+----------------
+
+.. list-table::
+    :header-rows: 1
+    :align: center
+
+    * - Record
+      - Type
+      - Description
+      - Pragma
+    * - $(PREFIX)LCLSGeneral:GlobalLogTrickleTrip_RBV
+      - bi
+      - Tripped by overall log count
+      - | io: input
+
+
+    * - $(PREFIX)LCLSGeneral:LogHost_RBV
+      - waveform
+      - The log host IP address
+      - | io: output
+
+
+    * - $(PREFIX)LCLSGeneral:LogHost
+      - waveform
+      - The log host IP address
+      - | io: output
+
+
+    * - $(PREFIX)LCLSGeneral:LogPort_RBV
+      - longin
+      - The log host UDP port
+      - | io: output
+
+
+    * - $(PREFIX)LCLSGeneral:LogPort
+      - longout
+      - The log host UDP port
+      - | io: output
+
+
+    * - $(PREFIX)LCLSGeneral:LogMessageCount_RBV
+      - longin
+      - Total log messages on the last cycle
+      - | io: input
+
+
+    * - RIX:SDS:SPR:PURGE:A_RBV
+      - bi
+      - GVL_SDS.PURGE_VRC_01_CTL
+      - | io: output
+
+
+    * - RIX:SDS:SPR:PURGE:A
+      - bo
+      - GVL_SDS.PURGE_VRC_01_CTL
+      - | io: output
+
+
+    * - RIX:SDS:SPR:PURGE:B_RBV
+      - bi
+      - GVL_SDS.PURGE_VRC_02_CTL
+      - | io: output
+
+
+    * - RIX:SDS:SPR:PURGE:B
+      - bo
+      - GVL_SDS.PURGE_VRC_02_CTL
+      - | io: output
+
+
+    * - RIX:SDS:SPR:A:Debug_RBV
+      - bi
+      - GVL_SDS.SolenoidPairA.i_xDebug
+      - | io: output
+
+
+    * - RIX:SDS:SPR:A:Debug
+      - bo
+      - GVL_SDS.SolenoidPairA.i_xDebug
+      - | io: output
+
+
+    * - RIX:SDS:SPR:A:Switch_RBV
+      - bi
+      - GVL_SDS.SolenoidPairA.i_xEpics
+      - | io: output
+
+
+    * - RIX:SDS:SPR:A:Switch
+      - bo
+      - GVL_SDS.SolenoidPairA.i_xEpics
+      - | io: output
+
+
+    * - RIX:SDS:SPR:A:Valve:01:Open_RBV
+      - bi
+      - GVL_SDS.SolenoidPairA.q_xDO1
+      - | io: output
+
+
+    * - RIX:SDS:SPR:A:Valve:01:Open
+      - bo
+      - GVL_SDS.SolenoidPairA.q_xDO1
+      - | io: output
+
+
+    * - RIX:SDS:SPR:A:Valve:02:Open_RBV
+      - bi
+      - GVL_SDS.SolenoidPairA.q_xDO2
+      - | io: output
+
+
+    * - RIX:SDS:SPR:A:Valve:02:Open
+      - bo
+      - GVL_SDS.SolenoidPairA.q_xDO2
+      - | io: output
+
+
+    * - CRIX:SDS:VICI:01:iReqPos_RBV
+      - longin
+      - GVL_SDS.fb_4PortViciValve_01.iReqPos
+      - | io: output
+
+
+    * - CRIX:SDS:VICI:01:iReqPos
+      - longout
+      - GVL_SDS.fb_4PortViciValve_01.iReqPos
+      - | io: output
+
+
+    * - CRIX:SDS:VICI:01:SampleNames:01_RBV
+      - waveform
+      - GVL_SDS.fb_4PortViciValve_01.stSampleNames.s1
+      - | io: output
+
+
+    * - CRIX:SDS:VICI:01:SampleNames:01
+      - waveform
+      - GVL_SDS.fb_4PortViciValve_01.stSampleNames.s1
+      - | io: output
+
+
+    * - CRIX:SDS:VICI:01:SampleNames:02_RBV
+      - waveform
+      - GVL_SDS.fb_4PortViciValve_01.stSampleNames.s2
+      - | io: output
+
+
+    * - CRIX:SDS:VICI:01:SampleNames:02
+      - waveform
+      - GVL_SDS.fb_4PortViciValve_01.stSampleNames.s2
+      - | io: output
+
+
+    * - CRIX:SDS:VICI:01:SampleNames:03_RBV
+      - waveform
+      - GVL_SDS.fb_4PortViciValve_01.stSampleNames.s3
+      - | io: output
+
+
+    * - CRIX:SDS:VICI:01:SampleNames:03
+      - waveform
+      - GVL_SDS.fb_4PortViciValve_01.stSampleNames.s3
+      - | io: output
+
+
+    * - CRIX:SDS:VICI:01:SampleNames:04_RBV
+      - waveform
+      - GVL_SDS.fb_4PortViciValve_01.stSampleNames.s4
+      - | io: output
+
+
+    * - CRIX:SDS:VICI:01:SampleNames:04
+      - waveform
+      - GVL_SDS.fb_4PortViciValve_01.stSampleNames.s4
+      - | io: output
+
+
+
