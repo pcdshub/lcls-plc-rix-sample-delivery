@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4022.18">
+  <POU Name="MAIN" Id="{92caf389-36e1-4cad-84b9-376141bd147e}" SpecialFunc="None">
+    <Declaration><![CDATA[PROGRAM MAIN
+VAR
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[M3SelectorA();
+M3SelectorB();
+M3SelectorC();
+M3SelectorD();
+PCMA();
+PCMB();
+PCMC();
+PCMD();
+GasMan();
+BronkhorstA();
+BronkhorstB();
+BronkhorstC();
+BronkhorstD();
+SolenoidPairA();
+
+(* Following execution of all the programs, set the first pass false *)
+g_xFirstPass := FALSE;]]></ST>
+    </Implementation>
+  </POU>
+</TcPlcObject>

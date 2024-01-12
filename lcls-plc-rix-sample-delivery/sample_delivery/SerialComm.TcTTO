@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4022.18">
+  <Task Name="SerialComm" Id="{09a62f54-5b96-46e9-8511-33be5104ecb3}">
+    <!--CycleTime in micro seconds.-->
+    <CycleTime>5000</CycleTime>
+    <Priority>1</Priority>
+    <PouCall>
+      <Name>SerialTxRx</Name>
+    </PouCall>
+    <TaskFBGuid>{6616daf8-4d2e-47ac-b256-1378f4081186}</TaskFBGuid>
+    <Fb_init>{0a86c778-081e-4028-be62-bd1933530123}</Fb_init>
+    <Fb_exit>{1aed2c8c-7c43-4743-acb0-bfb5752b6bd9}</Fb_exit>
+    <CycleUpdate>{b2b9e473-d6a6-4e56-913c-40a8c6c2e17d}</CycleUpdate>
+    <PostCycleUpdate>{58f018ba-f21f-43a6-8289-e378b150b9ac}</PostCycleUpdate>
+  </Task>
+</TcPlcObject>

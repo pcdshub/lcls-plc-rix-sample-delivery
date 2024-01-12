@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4022.18">
+  <POU Name="SerialTxRx" Id="{9fdbe883-e083-4b63-a863-4d2c242a797c}" SpecialFunc="None">
+    <Declaration><![CDATA[PROGRAM SerialTxRx
+VAR
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[M3SelectorA.SerialComm();
+M3SelectorB.SerialComm();
+M3SelectorC.SerialComm();
+M3SelectorD.SerialComm();
+
+PCMA.SerialComm();
+PCMB.SerialComm();
+PCMC.SerialComm();
+PCMD.SerialComm();]]></ST>
+    </Implementation>
+  </POU>
+</TcPlcObject>

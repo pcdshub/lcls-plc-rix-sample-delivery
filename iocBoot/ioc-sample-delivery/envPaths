@@ -1,0 +1,2 @@
+epicsEnvSet("IOC_TOP", "/c/Users/jozamudi/Documents/TcXaeShell/lcls-plc-rix-sample-delivery/iocBoot/ioc-sample-delivery")
+epicsEnvSet("IOC_DATA", "/cds/data/iocData")
