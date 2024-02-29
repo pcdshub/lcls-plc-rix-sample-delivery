@@ -1,9 +1,49 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <TcSmItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.beckhoff.com/schemas/2012/07/TcSmItem" TcSmVersion="1.0" TcVersion="3.1.4022.30" ClassName="CNestedPlcProjDef">
 	<Project GUID="{28EFC5A4-66A3-462A-93EA-9B1C0893EC54}" Name="sample_delivery" PrjFilePath="..\..\sample_delivery\sample_delivery.plcproj" TmcFilePath="..\..\sample_delivery\sample_delivery.tmc" ReloadTmc="true" AmsPort="851" FileArchiveSettings="#x000e" SymbolicMapping="true">
-		<Instance Id="#x08502000" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2">
+		<Instance Id="#x08502000" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" TmcPath="sample_delivery\sample_delivery.tmc">
 			<Name>sample_delivery Instance</Name>
 			<CLSID ClassFactory="TcPlc30">{08500001-0000-0000-F000-000000000064}</CLSID>
+			<Vars VarGrpType="1">
+				<Name>PlcTask Inputs</Name>
+				<Var>
+					<Name>GVL_SDS.SolenoidPairA.i_xEpics</Name>
+					<Comment>
+						<![CDATA[ open A when False, open B when True]]>
+					</Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>GVL_SDS.SolenoidPairA.i_xDebug</Name>
+					<Comment>
+						<![CDATA[ if True, do not set valves according to i_xEpics]]>
+					</Comment>
+					<Type>BOOL</Type>
+				</Var>
+			</Vars>
+			<Vars VarGrpType="2">
+				<Name>PlcTask Outputs</Name>
+				<Var>
+					<Name>GVL_SDS.SolenoidPairA.q_xDO1</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>GVL_SDS.SolenoidPairA.q_xDO2</Name>
+					<Type>BOOL</Type>
+				</Var>
+			</Vars>
+			<TaskPouOids>
+				<TaskPouOid Prio="1" OTCID="#x08502001"/>
+				<TaskPouOid Prio="20" OTCID="#x08502002"/>
+			</TaskPouOids>
 		</Instance>
 	</Project>
+	<Mappings>
+		<OwnerA Name="sample_delivery Instance">
+			<OwnerB Name="TIID^Device 1 (EtherCAT)^Box 3 (EP9128-0021)^Term 5 (EP9128-2021)^Solenoid Pair A Digital IO (EP2338-0001)">
+				<Link VarA="PlcTask Outputs^GVL_SDS.SolenoidPairA.q_xDO1" VarB="Channel 9^Output" AutoLink="true"/>
+				<Link VarA="PlcTask Outputs^GVL_SDS.SolenoidPairA.q_xDO2" VarB="Channel 10^Output" AutoLink="true"/>
+			</OwnerB>
+		</OwnerA>
+	</Mappings>
 </TcSmItem>

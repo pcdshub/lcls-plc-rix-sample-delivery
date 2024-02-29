@@ -2,6 +2,7 @@
 <TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4022.18">
   <GVL Name="GVL_SDS" Id="{233c10f9-ad08-42e0-b3b0-42b6b4ca796a}">
     <Declaration><![CDATA[VAR_GLOBAL
+(*
 {attribute 'pytmc' := 'pv: RIX:SDS:SEL:A'}
 {attribute 'TcLinkTo' := '.stSensSerial.stComIn.Status := TIIB[M3 Selector A Serial IO (EP6002-0002)]^COM TxPDO-Map Inputs Channel 1^Status;
                           .stViciSerial.stComIn.Status := TIIB[M3 Selector A Serial IO (EP6002-0002)]^COM TxPDO-Map Inputs Channel 2^Status;
@@ -149,6 +150,7 @@ BronkhorstC : FB_BronkhorstMFM;
                           .stMFM.q_rSetpoint := TIID^MAIN (EtherCAT)^Bronkhorst MFM D^RxPDO Map^fSetpoint;
 '}
 BronkhorstD : FB_BronkhorstMFM;
+*)
 
 {attribute 'pytmc' := 'pv: RIX:SDS:SPR:A'}
 {attribute 'TcLinkTo' := '.q_xDO1 := TIIB[Solenoid Pair A Digital IO (EP2338-0001)]^Channel 9^Output;

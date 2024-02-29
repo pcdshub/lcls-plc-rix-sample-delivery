@@ -6,7 +6,7 @@ VAR
 END_VAR
 ]]></Declaration>
     <Implementation>
-      <ST><![CDATA[M3SelectorA.SerialComm();
+      <ST><![CDATA[(*M3SelectorA.SerialComm();
 M3SelectorB.SerialComm();
 M3SelectorC.SerialComm();
 M3SelectorD.SerialComm();
@@ -14,7 +14,8 @@ M3SelectorD.SerialComm();
 PCMA.SerialComm();
 PCMB.SerialComm();
 PCMC.SerialComm();
-PCMD.SerialComm();]]></ST>
+PCMD.SerialComm();
+*)]]></ST>
     </Implementation>
   </POU>
 </TcPlcObject>

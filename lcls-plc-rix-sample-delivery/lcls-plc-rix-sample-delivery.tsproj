@@ -15,7 +15,7 @@
 			<Project File="sample_delivery.xti"/>
 		</Plc>
 		<Io>
-			<Device File="MAIN (EtherCAT).xti" Id="1"/>
+			<Device File="Device 1 (EtherCAT).xti" Id="1"/>
 		</Io>
 	</Project>
 </TcSmProject>

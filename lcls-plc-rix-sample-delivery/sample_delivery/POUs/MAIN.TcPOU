@@ -6,7 +6,7 @@ VAR
 END_VAR
 ]]></Declaration>
     <Implementation>
-      <ST><![CDATA[M3SelectorA();
+      <ST><![CDATA[(*M3SelectorA();
 M3SelectorB();
 M3SelectorC();
 M3SelectorD();
@@ -19,6 +19,7 @@ BronkhorstA();
 BronkhorstB();
 BronkhorstC();
 BronkhorstD();
+*)
 SolenoidPairA();
 
 (* Following execution of all the programs, set the first pass false *)
