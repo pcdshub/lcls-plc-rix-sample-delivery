@@ -1,11 +1,11 @@
-#!c:/Repos/ads-ioc/R0.6.1///bin/rhel7-x86_64/adsIoc
+#!/reg/g/pcds/epics/ioc/common/ads-ioc/R0.6.1/bin/rhel7-x86_64/adsIoc
 ################### AUTO-GENERATED DO NOT EDIT ###################
 #
 #         Project: lcls-plc-rix-sample-delivery.tsproj
 #        PLC name: sample_delivery (sample_delivery Instance)
-# Generated using: pytmc 2.15.2.dev0+g73bd2d9.d20230727
-# Project version: unknown
-#    Project hash: unknown
+# Generated using: pytmc 2.16.0
+# Project version: daa8e48
+#    Project hash: daa8e486c1f9457d6b423123a84806089c258608
 #     PLC IP/host: 172.21.140.88
 #      PLC Net ID: 172.21.140.88.1.1
 # ** DEVELOPMENT MODE IOC **
@@ -24,7 +24,7 @@
 
 epicsEnvSet("ADS_IOC_TOP", "$(TOP)" )
 
-epicsEnvSet("ENGINEER", "" )
+epicsEnvSet("ENGINEER", "jozamudi" )
 epicsEnvSet("LOCATION", "PLC:sample_delivery" )
 epicsEnvSet("IOCSH_PS1", "$(IOC)> " )
 epicsEnvSet("ACF_FILE", "$(ADS_IOC_TOP)/iocBoot/templates/unrestricted.acf")
@@ -37,14 +37,14 @@ epicsEnvSet("ASYN_PORT",        "ASYN_PLC")
 epicsEnvSet("IPADDR",           "172.21.140.88")
 epicsEnvSet("AMSID",            "172.21.140.88.1.1")
 epicsEnvSet("AMS_PORT",         "851")
-epicsEnvSet("ADS_MAX_PARAMS",   "1453")
+epicsEnvSet("ADS_MAX_PARAMS",   "1014")
 epicsEnvSet("ADS_SAMPLE_MS",    "50")
 epicsEnvSet("ADS_MAX_DELAY_MS", "100")
 epicsEnvSet("ADS_TIMEOUT_MS",   "1000")
 epicsEnvSet("ADS_TIME_SOURCE",  "0")
 
 # Add a route to the PLC automatically:
-system("${ADS_IOC_TOP}/scripts/add_route.sh 172.21.140.88 ^172.*$")
+system("${ADS_IOC_TOP}/scripts/add_route.sh 172.21.140.88 ^172.*")
 
 # adsAsynPortDriverConfigure(portName, ipaddr, amsaddr, amsport,
 #    asynParamTableSize, priority, noAutoConnect, defaultSampleTimeMS,
@@ -79,9 +79,11 @@ dbLoadRecords("save_restoreStatus.db", "P=PLC:sample_delivery:")
 dbLoadRecords("caPutLog.db", "IOC=$(IOC)")
 
 ## TwinCAT task, application, and project information databases ##
+dbLoadRecords("TwinCAT_TaskInfo.db", "PORT=$(ASYN_PORT),PREFIX=PLC:sample_delivery,IDX=1")
+dbLoadRecords("TwinCAT_TaskInfo.db", "PORT=$(ASYN_PORT),PREFIX=PLC:sample_delivery,IDX=2")
 dbLoadRecords("TwinCAT_AppInfo.db", "PORT=$(ASYN_PORT), PREFIX=PLC:sample_delivery")
 
-dbLoadRecords("TwinCAT_Project.db", "PREFIX=PLC:sample_delivery,PROJECT=lcls-plc-rix-sample-delivery.tsproj,HASH=unknown,VERSION=unknown,PYTMC=2.15.2.dev0+g73bd2d9.d20230727,PLC_HOST=172.21.140.88")
+dbLoadRecords("TwinCAT_Project.db", "PREFIX=PLC:sample_delivery,PROJECT=lcls-plc-rix-sample-delivery.tsproj,HASH=daa8e48,VERSION=daa8e48,PYTMC=2.16.0,PLC_HOST=172.21.140.88")
 
 #   lcls-twincat-sample-delivery: * -> 0.0.0 (SLAC)
 dbLoadRecords("TwinCAT_Dependency.db", "PREFIX=PLC:sample_delivery,DEPENDENCY=lcls-twincat-sample-delivery,VERSION=0.0.0,VENDOR=SLAC")
@@ -97,8 +99,8 @@ cd "$(IOC_TOP)"
 ## PLC Project Database files ##
 dbLoadRecords("sample_delivery.db", "PORT=$(ASYN_PORT),PREFIX=PLC:sample_delivery:,IOCNAME=$(IOC),IOC=$(IOC)")
 
-# Total records: 453
-callbackSetQueueSize(2906)
+# Total records: 14
+callbackSetQueueSize(2028)
 
 # Autosave and archive settings:
 save_restoreSet_status_prefix("PLC:sample_delivery:")
