@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<TcModuleClass xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.beckhoff.com/schemas/2009/05/TcModuleClass" Hash="{9524D689-AE3F-23C0-45F0-B4A3DA122E20}" GeneratedBy="TwinCAT XAE Plc">
+<TcModuleClass xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.beckhoff.com/schemas/2009/05/TcModuleClass" Hash="{6464450B-8766-FB5D-F69F-BF580D326C05}" GeneratedBy="TwinCAT XAE Plc">
   <DataTypes>
     <DataType>
       <Name GUID="{5C8FF47F-7F83-4493-8D21-F1FF8A08F75A}" Namespace="PLC" TcBaseType="true">PlcAppSystemInfo</Name>
@@ -12164,7 +12164,7 @@
                 <Name>TcVarGlobal</Name>
               </Property>
             </Properties>
-            <BitOffs>634612736</BitOffs>
+            <BitOffs>634612768</BitOffs>
           </Symbol>
           <Symbol>
             <Name>TwinCAT_SystemInfoVarList._TaskPouOid_SerialComm</Name>
@@ -12178,7 +12178,7 @@
                 <Name>TcVarGlobal</Name>
               </Property>
             </Properties>
-            <BitOffs>634616832</BitOffs>
+            <BitOffs>634614816</BitOffs>
           </Symbol>
           <Symbol>
             <Name>TwinCAT_SystemInfoVarList._TaskOid_SerialComm</Name>
@@ -12192,7 +12192,7 @@
                 <Name>TcVarGlobal</Name>
               </Property>
             </Properties>
-            <BitOffs>634616864</BitOffs>
+            <BitOffs>634616896</BitOffs>
           </Symbol>
           <Symbol>
             <Name>TwinCAT_SystemInfoVarList.__SerialComm</Name>
@@ -12213,7 +12213,7 @@
                 <Name>TcVarGlobal</Name>
               </Property>
             </Properties>
-            <BitOffs>634616960</BitOffs>
+            <BitOffs>634616992</BitOffs>
           </Symbol>
         </DataArea>
         <DataArea>
@@ -12268,6 +12268,30 @@
           <ContextId>1</ContextId>
           <ByteSize>79757312</ByteSize>
           <Symbol>
+            <Name>GVL_SDS.PURGE_VRC_01_CTL</Name>
+            <Comment> Purge Valves</Comment>
+            <BitSize>8</BitSize>
+            <BaseType>BOOL</BaseType>
+            <Properties>
+              <Property>
+                <Name>pytmc</Name>
+                <Value>pv: UED:SDS:PURGE:A</Value>
+              </Property>
+              <Property>
+                <Name>TcLinkTo</Name>
+                <Value>TIIB[Solenoid Pair A Digital IO (EP2338-0001)]^Channel 11^Output</Value>
+              </Property>
+              <Property>
+                <Name>TcAddressType</Name>
+                <Value>Output</Value>
+              </Property>
+              <Property>
+                <Name>TcVarGlobal</Name>
+              </Property>
+            </Properties>
+            <BitOffs>626219944</BitOffs>
+          </Symbol>
+          <Symbol>
             <Name>GVL_SDS.SolenoidPairA.q_xDO1</Name>
             <BitSize>8</BitSize>
             <BaseType>BOOL</BaseType>
@@ -12304,6 +12328,29 @@
               </Property>
             </Properties>
             <BitOffs>634612456</BitOffs>
+          </Symbol>
+          <Symbol>
+            <Name>GVL_SDS.PURGE_VRC_02_CTL</Name>
+            <BitSize>8</BitSize>
+            <BaseType>BOOL</BaseType>
+            <Properties>
+              <Property>
+                <Name>pytmc</Name>
+                <Value>pv: UED:SDS:PURGE:B</Value>
+              </Property>
+              <Property>
+                <Name>TcLinkTo</Name>
+                <Value>TIIB[Solenoid Pair A Digital IO (EP2338-0001)]^Channel 12^Output</Value>
+              </Property>
+              <Property>
+                <Name>TcAddressType</Name>
+                <Value>Output</Value>
+              </Property>
+              <Property>
+                <Name>TcVarGlobal</Name>
+              </Property>
+            </Properties>
+            <BitOffs>634612480</BitOffs>
           </Symbol>
         </DataArea>
         <DataArea>
@@ -17505,7 +17552,7 @@ BronkhorstD : FB_BronkhorstMFM;
                 <Name>TcVarGlobal</Name>
               </Property>
             </Properties>
-            <BitOffs>634612480</BitOffs>
+            <BitOffs>634612496</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Constants.bSimulationMode</Name>
@@ -17520,7 +17567,7 @@ BronkhorstD : FB_BronkhorstMFM;
                 <Name>TcVarGlobal</Name>
               </Property>
             </Properties>
-            <BitOffs>634612488</BitOffs>
+            <BitOffs>634612504</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Constants.RuntimeVersion</Name>
@@ -17550,7 +17597,7 @@ BronkhorstD : FB_BronkhorstMFM;
                 <Name>TcVarGlobal</Name>
               </Property>
             </Properties>
-            <BitOffs>634612496</BitOffs>
+            <BitOffs>634612512</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Constants.CompilerVersion</Name>
@@ -17580,7 +17627,7 @@ BronkhorstD : FB_BronkhorstMFM;
                 <Name>TcVarGlobal</Name>
               </Property>
             </Properties>
-            <BitOffs>634612560</BitOffs>
+            <BitOffs>634612576</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Constants.nRegisterSize</Name>
@@ -17595,7 +17642,7 @@ BronkhorstD : FB_BronkhorstMFM;
                 <Name>TcVarGlobal</Name>
               </Property>
             </Properties>
-            <BitOffs>634612624</BitOffs>
+            <BitOffs>634612640</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Constants.nPackMode</Name>
@@ -17610,7 +17657,7 @@ BronkhorstD : FB_BronkhorstMFM;
                 <Name>TcVarGlobal</Name>
               </Property>
             </Properties>
-            <BitOffs>634612640</BitOffs>
+            <BitOffs>634612656</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Constants.bFPUSupport</Name>
@@ -17624,7 +17671,7 @@ BronkhorstD : FB_BronkhorstMFM;
                 <Name>TcVarGlobal</Name>
               </Property>
             </Properties>
-            <BitOffs>634612656</BitOffs>
+            <BitOffs>634612672</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Constants.RuntimeVersionNumeric</Name>
@@ -17638,7 +17685,7 @@ BronkhorstD : FB_BronkhorstMFM;
                 <Name>TcVarGlobal</Name>
               </Property>
             </Properties>
-            <BitOffs>634612672</BitOffs>
+            <BitOffs>634612704</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Constants.CompilerVersionNumeric</Name>
@@ -17652,7 +17699,7 @@ BronkhorstD : FB_BronkhorstMFM;
                 <Name>TcVarGlobal</Name>
               </Property>
             </Properties>
-            <BitOffs>634612704</BitOffs>
+            <BitOffs>634612736</BitOffs>
           </Symbol>
           <Symbol>
             <Name>TwinCAT_SystemInfoVarList._TaskInfo</Name>
@@ -17670,7 +17717,7 @@ BronkhorstD : FB_BronkhorstMFM;
                 <Name>TcVarGlobal</Name>
               </Property>
             </Properties>
-            <BitOffs>634614784</BitOffs>
+            <BitOffs>634614848</BitOffs>
           </Symbol>
           <Symbol>
             <Name>TwinCAT_SystemInfoVarList._TaskPouOid_PlcTask</Name>
@@ -17684,7 +17731,7 @@ BronkhorstD : FB_BronkhorstMFM;
                 <Name>TcVarGlobal</Name>
               </Property>
             </Properties>
-            <BitOffs>634616896</BitOffs>
+            <BitOffs>634616928</BitOffs>
           </Symbol>
           <Symbol>
             <Name>TwinCAT_SystemInfoVarList._TaskOid_PlcTask</Name>
@@ -17698,7 +17745,7 @@ BronkhorstD : FB_BronkhorstMFM;
                 <Name>TcVarGlobal</Name>
               </Property>
             </Properties>
-            <BitOffs>634616928</BitOffs>
+            <BitOffs>634616960</BitOffs>
           </Symbol>
           <Symbol>
             <Name>TwinCAT_SystemInfoVarList.__PlcTask</Name>
@@ -17719,7 +17766,7 @@ BronkhorstD : FB_BronkhorstMFM;
                 <Name>TcVarGlobal</Name>
               </Property>
             </Properties>
-            <BitOffs>634617664</BitOffs>
+            <BitOffs>634617696</BitOffs>
           </Symbol>
           <Symbol>
             <Name>TC_EVENTS.LCLSGeneralEventClass</Name>
@@ -17742,7 +17789,7 @@ BronkhorstD : FB_BronkhorstMFM;
                 <Name>TcVarGlobal</Name>
               </Property>
             </Properties>
-            <BitOffs>634649344</BitOffs>
+            <BitOffs>634649376</BitOffs>
           </Symbol>
         </DataArea>
       </DataAreas>
@@ -17759,7 +17806,7 @@ BronkhorstD : FB_BronkhorstMFM;
         </Property>
         <Property>
           <Name>ChangeDate</Name>
-          <Value>2024-02-29T11:43:51</Value>
+          <Value>2024-10-03T12:11:45</Value>
         </Property>
         <Property>
           <Name>GeneratedCodeSize</Name>

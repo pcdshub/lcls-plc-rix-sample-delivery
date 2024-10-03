@@ -158,6 +158,14 @@ BronkhorstD : FB_BronkhorstMFM;
 '}
 SolenoidPairA : FB_SolenoidPair;
 
+// Purge Valves
+{attribute 'pytmc' := 'pv: RIX:SDS:SPR:PURGE:A'}
+{attribute 'TcLinkTo' := 'TIIB[Solenoid Pair A Digital IO (EP2338-0001)]^Channel 11^Output'}
+PURGE_VRC_01_CTL AT%Q* : BOOL;
+
+{attribute 'pytmc' := 'pv: RIX:SDS:SPR:PURGE:B'}
+{attribute 'TcLinkTo' := 'TIIB[Solenoid Pair A Digital IO (EP2338-0001)]^Channel 12^Output'}
+PURGE_VRC_02_CTL AT%Q* : BOOL;
 
 
 
