@@ -24,11 +24,22 @@
 			<Vars VarGrpType="2">
 				<Name>PlcTask Outputs</Name>
 				<Var>
+					<Name>GVL_SDS.PURGE_VRC_01_CTL</Name>
+					<Comment>
+						<![CDATA[ Purge Valves]]>
+					</Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
 					<Name>GVL_SDS.SolenoidPairA.q_xDO1</Name>
 					<Type>BOOL</Type>
 				</Var>
 				<Var>
 					<Name>GVL_SDS.SolenoidPairA.q_xDO2</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>GVL_SDS.PURGE_VRC_02_CTL</Name>
 					<Type>BOOL</Type>
 				</Var>
 			</Vars>
@@ -41,6 +52,8 @@
 	<Mappings>
 		<OwnerA Name="sample_delivery Instance">
 			<OwnerB Name="TIID^Device 1 (EtherCAT)^Box 3 (EP9128-0021)^Term 5 (EP9128-2021)^Solenoid Pair A Digital IO (EP2338-0001)">
+				<Link VarA="PlcTask Outputs^GVL_SDS.PURGE_VRC_01_CTL" VarB="Channel 11^Output" AutoLink="true"/>
+				<Link VarA="PlcTask Outputs^GVL_SDS.PURGE_VRC_02_CTL" VarB="Channel 12^Output" AutoLink="true"/>
 				<Link VarA="PlcTask Outputs^GVL_SDS.SolenoidPairA.q_xDO1" VarB="Channel 9^Output" AutoLink="true"/>
 				<Link VarA="PlcTask Outputs^GVL_SDS.SolenoidPairA.q_xDO2" VarB="Channel 10^Output" AutoLink="true"/>
 			</OwnerB>
