@@ -3,9 +3,9 @@
 #
 #         Project: lcls-plc-rix-sample-delivery.tsproj
 #        PLC name: sample_delivery (sample_delivery Instance)
-# Generated using: pytmc 2.16.0
-# Project version: daa8e48
-#    Project hash: daa8e486c1f9457d6b423123a84806089c258608
+# Generated using: pytmc 2.17.0
+# Project version: 65f4760
+#    Project hash: 65f4760dc898c521ca470ce6315548ad2336085e
 #     PLC IP/host: 172.21.140.88
 #      PLC Net ID: 172.21.140.88.1.1
 # ** DEVELOPMENT MODE IOC **
@@ -37,7 +37,7 @@ epicsEnvSet("ASYN_PORT",        "ASYN_PLC")
 epicsEnvSet("IPADDR",           "172.21.140.88")
 epicsEnvSet("AMSID",            "172.21.140.88.1.1")
 epicsEnvSet("AMS_PORT",         "851")
-epicsEnvSet("ADS_MAX_PARAMS",   "1014")
+epicsEnvSet("ADS_MAX_PARAMS",   "1018")
 epicsEnvSet("ADS_SAMPLE_MS",    "50")
 epicsEnvSet("ADS_MAX_DELAY_MS", "100")
 epicsEnvSet("ADS_TIMEOUT_MS",   "1000")
@@ -83,7 +83,7 @@ dbLoadRecords("TwinCAT_TaskInfo.db", "PORT=$(ASYN_PORT),PREFIX=PLC:sample_delive
 dbLoadRecords("TwinCAT_TaskInfo.db", "PORT=$(ASYN_PORT),PREFIX=PLC:sample_delivery,IDX=2")
 dbLoadRecords("TwinCAT_AppInfo.db", "PORT=$(ASYN_PORT), PREFIX=PLC:sample_delivery")
 
-dbLoadRecords("TwinCAT_Project.db", "PREFIX=PLC:sample_delivery,PROJECT=lcls-plc-rix-sample-delivery.tsproj,HASH=daa8e48,VERSION=daa8e48,PYTMC=2.16.0,PLC_HOST=172.21.140.88")
+dbLoadRecords("TwinCAT_Project.db", "PREFIX=PLC:sample_delivery,PROJECT=lcls-plc-rix-sample-delivery.tsproj,HASH=65f4760,VERSION=65f4760,PYTMC=2.17.0,PLC_HOST=172.21.140.88")
 
 #   lcls-twincat-sample-delivery: * -> 0.0.0 (SLAC)
 dbLoadRecords("TwinCAT_Dependency.db", "PREFIX=PLC:sample_delivery,DEPENDENCY=lcls-twincat-sample-delivery,VERSION=0.0.0,VENDOR=SLAC")
@@ -99,8 +99,8 @@ cd "$(IOC_TOP)"
 ## PLC Project Database files ##
 dbLoadRecords("sample_delivery.db", "PORT=$(ASYN_PORT),PREFIX=PLC:sample_delivery:,IOCNAME=$(IOC),IOC=$(IOC)")
 
-# Total records: 14
-callbackSetQueueSize(2028)
+# Total records: 18
+callbackSetQueueSize(2036)
 
 # Autosave and archive settings:
 save_restoreSet_status_prefix("PLC:sample_delivery:")
