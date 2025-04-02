@@ -223,3 +223,293 @@ record(bo, "RIX:SDS:SPR:A:Valve:02:Open") {
   info(autosaveFields_pass0, "COSV DESC DISS OSV SIMS UDFS VAL ZSV")
   info(archive, "VAL")
 }
+
+record(longin, "CRIX:SDS:VICI:01:iReqPos_RBV") {
+  field(DESC, "GVL_SDS.fb_4PortViciValve_01.iReqPos")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_SDS.fb_4PortViciValve_01.iReqPos?")
+  info(autosaveFields_pass0, "DESC DISS HHSV HIGH HIHI HSV LLSV LOLO LOW LSV SIMS UDFS")
+  info(archive, "VAL")
+  field(ASG, "NO_WRITE")
+}
+
+record(longout, "CRIX:SDS:VICI:01:iReqPos") {
+  field(DESC, "GVL_SDS.fb_4PortViciValve_01.iReqPos")
+  field(DTYP, "asynInt32")
+  field(UDFS, "0")
+  field(OUT, "@asyn($(PORT),0,1)ADSPORT=851/GVL_SDS.fb_4PortViciValve_01.iReqPos=")
+  info(autosaveFields_pass0, "DESC DISS DRVH DRVL HHSV HIGH HIHI HSV LLSV LOLO LOW LSV SIMS UDFS VAL")
+  info(archive, "VAL")
+}
+
+record(waveform, "CRIX:SDS:VICI:01:SampleNames:01_RBV") {
+  # GVL_SDS.fb_4PortViciValve_01.stSampleNames.s1
+  field(DESC, "GVL_SDS.fb_4PortVici....stSampleNames.s1")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt8ArrayIn")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_SDS.fb_4PortViciValve_01.stSampleNames.s1?")
+  field(FTVL, "CHAR")
+  field(NELM, "80")
+  field(MPST, "On Change")
+  field(APST, "On Change")
+  info(autosaveFields_pass0, "DESC DISS SIMS UDFS")
+  info(archive, "VAL")
+  field(ASG, "NO_WRITE")
+}
+
+record(waveform, "CRIX:SDS:VICI:01:SampleNames:01") {
+  # GVL_SDS.fb_4PortViciValve_01.stSampleNames.s1
+  field(DESC, "GVL_SDS.fb_4PortVici....stSampleNames.s1")
+  field(DTYP, "asynInt8ArrayOut")
+  field(UDFS, "0")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/GVL_SDS.fb_4PortViciValve_01.stSampleNames.s1=")
+  field(FTVL, "CHAR")
+  field(NELM, "80")
+  field(MPST, "On Change")
+  field(APST, "On Change")
+  info(autosaveFields_pass0, "DESC DISS SIMS UDFS VAL")
+  info(archive, "VAL")
+}
+
+record(waveform, "CRIX:SDS:VICI:01:SampleNames:02_RBV") {
+  # GVL_SDS.fb_4PortViciValve_01.stSampleNames.s2
+  field(DESC, "GVL_SDS.fb_4PortVici....stSampleNames.s2")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt8ArrayIn")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_SDS.fb_4PortViciValve_01.stSampleNames.s2?")
+  field(FTVL, "CHAR")
+  field(NELM, "80")
+  field(MPST, "On Change")
+  field(APST, "On Change")
+  info(autosaveFields_pass0, "DESC DISS SIMS UDFS")
+  info(archive, "VAL")
+  field(ASG, "NO_WRITE")
+}
+
+record(waveform, "CRIX:SDS:VICI:01:SampleNames:02") {
+  # GVL_SDS.fb_4PortViciValve_01.stSampleNames.s2
+  field(DESC, "GVL_SDS.fb_4PortVici....stSampleNames.s2")
+  field(DTYP, "asynInt8ArrayOut")
+  field(UDFS, "0")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/GVL_SDS.fb_4PortViciValve_01.stSampleNames.s2=")
+  field(FTVL, "CHAR")
+  field(NELM, "80")
+  field(MPST, "On Change")
+  field(APST, "On Change")
+  info(autosaveFields_pass0, "DESC DISS SIMS UDFS VAL")
+  info(archive, "VAL")
+}
+
+record(waveform, "CRIX:SDS:VICI:01:SampleNames:03_RBV") {
+  # GVL_SDS.fb_4PortViciValve_01.stSampleNames.s3
+  field(DESC, "GVL_SDS.fb_4PortVici....stSampleNames.s3")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt8ArrayIn")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_SDS.fb_4PortViciValve_01.stSampleNames.s3?")
+  field(FTVL, "CHAR")
+  field(NELM, "80")
+  field(MPST, "On Change")
+  field(APST, "On Change")
+  info(autosaveFields_pass0, "DESC DISS SIMS UDFS")
+  info(archive, "VAL")
+  field(ASG, "NO_WRITE")
+}
+
+record(waveform, "CRIX:SDS:VICI:01:SampleNames:03") {
+  # GVL_SDS.fb_4PortViciValve_01.stSampleNames.s3
+  field(DESC, "GVL_SDS.fb_4PortVici....stSampleNames.s3")
+  field(DTYP, "asynInt8ArrayOut")
+  field(UDFS, "0")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/GVL_SDS.fb_4PortViciValve_01.stSampleNames.s3=")
+  field(FTVL, "CHAR")
+  field(NELM, "80")
+  field(MPST, "On Change")
+  field(APST, "On Change")
+  info(autosaveFields_pass0, "DESC DISS SIMS UDFS VAL")
+  info(archive, "VAL")
+}
+
+record(waveform, "CRIX:SDS:VICI:01:SampleNames:04_RBV") {
+  # GVL_SDS.fb_4PortViciValve_01.stSampleNames.s4
+  field(DESC, "GVL_SDS.fb_4PortVici....stSampleNames.s4")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt8ArrayIn")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_SDS.fb_4PortViciValve_01.stSampleNames.s4?")
+  field(FTVL, "CHAR")
+  field(NELM, "80")
+  field(MPST, "On Change")
+  field(APST, "On Change")
+  info(autosaveFields_pass0, "DESC DISS SIMS UDFS")
+  info(archive, "VAL")
+  field(ASG, "NO_WRITE")
+}
+
+record(waveform, "CRIX:SDS:VICI:01:SampleNames:04") {
+  # GVL_SDS.fb_4PortViciValve_01.stSampleNames.s4
+  field(DESC, "GVL_SDS.fb_4PortVici....stSampleNames.s4")
+  field(DTYP, "asynInt8ArrayOut")
+  field(UDFS, "0")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/GVL_SDS.fb_4PortViciValve_01.stSampleNames.s4=")
+  field(FTVL, "CHAR")
+  field(NELM, "80")
+  field(MPST, "On Change")
+  field(APST, "On Change")
+  info(autosaveFields_pass0, "DESC DISS SIMS UDFS VAL")
+  info(archive, "VAL")
+}
+
+record(longin, "CRIX:SDS:VICI:02:iReqPos_RBV") {
+  field(DESC, "GVL_SDS.fb_4PortViciValve_02.iReqPos")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_SDS.fb_4PortViciValve_02.iReqPos?")
+  info(autosaveFields_pass0, "DESC DISS HHSV HIGH HIHI HSV LLSV LOLO LOW LSV SIMS UDFS")
+  info(archive, "VAL")
+  field(ASG, "NO_WRITE")
+}
+
+record(longout, "CRIX:SDS:VICI:02:iReqPos") {
+  field(DESC, "GVL_SDS.fb_4PortViciValve_02.iReqPos")
+  field(DTYP, "asynInt32")
+  field(UDFS, "0")
+  field(OUT, "@asyn($(PORT),0,1)ADSPORT=851/GVL_SDS.fb_4PortViciValve_02.iReqPos=")
+  info(autosaveFields_pass0, "DESC DISS DRVH DRVL HHSV HIGH HIHI HSV LLSV LOLO LOW LSV SIMS UDFS VAL")
+  info(archive, "VAL")
+}
+
+record(waveform, "CRIX:SDS:VICI:02:SampleNames:01_RBV") {
+  # GVL_SDS.fb_4PortViciValve_02.stSampleNames.s1
+  field(DESC, "GVL_SDS.fb_4PortVici....stSampleNames.s1")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt8ArrayIn")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_SDS.fb_4PortViciValve_02.stSampleNames.s1?")
+  field(FTVL, "CHAR")
+  field(NELM, "80")
+  field(MPST, "On Change")
+  field(APST, "On Change")
+  info(autosaveFields_pass0, "DESC DISS SIMS UDFS")
+  info(archive, "VAL")
+  field(ASG, "NO_WRITE")
+}
+
+record(waveform, "CRIX:SDS:VICI:02:SampleNames:01") {
+  # GVL_SDS.fb_4PortViciValve_02.stSampleNames.s1
+  field(DESC, "GVL_SDS.fb_4PortVici....stSampleNames.s1")
+  field(DTYP, "asynInt8ArrayOut")
+  field(UDFS, "0")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/GVL_SDS.fb_4PortViciValve_02.stSampleNames.s1=")
+  field(FTVL, "CHAR")
+  field(NELM, "80")
+  field(MPST, "On Change")
+  field(APST, "On Change")
+  info(autosaveFields_pass0, "DESC DISS SIMS UDFS VAL")
+  info(archive, "VAL")
+}
+
+record(waveform, "CRIX:SDS:VICI:02:SampleNames:02_RBV") {
+  # GVL_SDS.fb_4PortViciValve_02.stSampleNames.s2
+  field(DESC, "GVL_SDS.fb_4PortVici....stSampleNames.s2")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt8ArrayIn")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_SDS.fb_4PortViciValve_02.stSampleNames.s2?")
+  field(FTVL, "CHAR")
+  field(NELM, "80")
+  field(MPST, "On Change")
+  field(APST, "On Change")
+  info(autosaveFields_pass0, "DESC DISS SIMS UDFS")
+  info(archive, "VAL")
+  field(ASG, "NO_WRITE")
+}
+
+record(waveform, "CRIX:SDS:VICI:02:SampleNames:02") {
+  # GVL_SDS.fb_4PortViciValve_02.stSampleNames.s2
+  field(DESC, "GVL_SDS.fb_4PortVici....stSampleNames.s2")
+  field(DTYP, "asynInt8ArrayOut")
+  field(UDFS, "0")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/GVL_SDS.fb_4PortViciValve_02.stSampleNames.s2=")
+  field(FTVL, "CHAR")
+  field(NELM, "80")
+  field(MPST, "On Change")
+  field(APST, "On Change")
+  info(autosaveFields_pass0, "DESC DISS SIMS UDFS VAL")
+  info(archive, "VAL")
+}
+
+record(waveform, "CRIX:SDS:VICI:02:SampleNames:03_RBV") {
+  # GVL_SDS.fb_4PortViciValve_02.stSampleNames.s3
+  field(DESC, "GVL_SDS.fb_4PortVici....stSampleNames.s3")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt8ArrayIn")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_SDS.fb_4PortViciValve_02.stSampleNames.s3?")
+  field(FTVL, "CHAR")
+  field(NELM, "80")
+  field(MPST, "On Change")
+  field(APST, "On Change")
+  info(autosaveFields_pass0, "DESC DISS SIMS UDFS")
+  info(archive, "VAL")
+  field(ASG, "NO_WRITE")
+}
+
+record(waveform, "CRIX:SDS:VICI:02:SampleNames:03") {
+  # GVL_SDS.fb_4PortViciValve_02.stSampleNames.s3
+  field(DESC, "GVL_SDS.fb_4PortVici....stSampleNames.s3")
+  field(DTYP, "asynInt8ArrayOut")
+  field(UDFS, "0")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/GVL_SDS.fb_4PortViciValve_02.stSampleNames.s3=")
+  field(FTVL, "CHAR")
+  field(NELM, "80")
+  field(MPST, "On Change")
+  field(APST, "On Change")
+  info(autosaveFields_pass0, "DESC DISS SIMS UDFS VAL")
+  info(archive, "VAL")
+}
+
+record(waveform, "CRIX:SDS:VICI:02:SampleNames:04_RBV") {
+  # GVL_SDS.fb_4PortViciValve_02.stSampleNames.s4
+  field(DESC, "GVL_SDS.fb_4PortVici....stSampleNames.s4")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt8ArrayIn")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_SDS.fb_4PortViciValve_02.stSampleNames.s4?")
+  field(FTVL, "CHAR")
+  field(NELM, "80")
+  field(MPST, "On Change")
+  field(APST, "On Change")
+  info(autosaveFields_pass0, "DESC DISS SIMS UDFS")
+  info(archive, "VAL")
+  field(ASG, "NO_WRITE")
+}
+
+record(waveform, "CRIX:SDS:VICI:02:SampleNames:04") {
+  # GVL_SDS.fb_4PortViciValve_02.stSampleNames.s4
+  field(DESC, "GVL_SDS.fb_4PortVici....stSampleNames.s4")
+  field(DTYP, "asynInt8ArrayOut")
+  field(UDFS, "0")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/GVL_SDS.fb_4PortViciValve_02.stSampleNames.s4=")
+  field(FTVL, "CHAR")
+  field(NELM, "80")
+  field(MPST, "On Change")
+  field(APST, "On Change")
+  info(autosaveFields_pass0, "DESC DISS SIMS UDFS VAL")
+  info(archive, "VAL")
+}
