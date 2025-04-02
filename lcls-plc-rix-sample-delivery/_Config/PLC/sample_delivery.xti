@@ -1,11 +1,75 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <TcSmItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.beckhoff.com/schemas/2012/07/TcSmItem" TcSmVersion="1.0" TcVersion="3.1.4022.30" ClassName="CNestedPlcProjDef">
+	<DataTypes>
+		<DataType>
+			<Name GUID="{30041C4F-8D9C-4C0A-9A8A-33894F3F936D}" Namespace="lcls_twincat_sample_delivery.Tc2_SerialCom" AutoDeleteType="true">EL6inData22B</Name>
+			<Comment>
+				<![CDATA[ This data type is corresponding to the
+   EL-6xxx data structure used in the
+   TwinCAT SystemManager
+   (EL-6xxx version using 22 data bytes) 
+]]>
+			</Comment>
+			<BitSize>192</BitSize>
+			<SubItem>
+				<Name>Status</Name>
+				<Type GUID="{18071995-0000-0000-0000-000000000004}">WORD</Type>
+				<BitSize>16</BitSize>
+				<BitOffs>0</BitOffs>
+			</SubItem>
+			<SubItem>
+				<Name>D</Name>
+				<Type GUID="{18071995-0000-0000-0000-000000000001}">BYTE</Type>
+				<ArrayInfo>
+					<LBound>0</LBound>
+					<Elements>22</Elements>
+				</ArrayInfo>
+				<BitSize>176</BitSize>
+				<BitOffs>16</BitOffs>
+			</SubItem>
+		</DataType>
+		<DataType>
+			<Name GUID="{2A3132B6-0851-49EF-B04F-75670C297774}" Namespace="lcls_twincat_sample_delivery.Tc2_SerialCom" AutoDeleteType="true">EL6outData22B</Name>
+			<Comment>
+				<![CDATA[ This data type is corresponding to the
+   EL-6xxx data structure used in the
+   TwinCAT SystemManager
+   (EL-6xxx version using 22 data bytes) 
+]]>
+			</Comment>
+			<BitSize>192</BitSize>
+			<SubItem>
+				<Name>Ctrl</Name>
+				<Type GUID="{18071995-0000-0000-0000-000000000004}">WORD</Type>
+				<BitSize>16</BitSize>
+				<BitOffs>0</BitOffs>
+			</SubItem>
+			<SubItem>
+				<Name>D</Name>
+				<Type GUID="{18071995-0000-0000-0000-000000000001}">BYTE</Type>
+				<ArrayInfo>
+					<LBound>0</LBound>
+					<Elements>22</Elements>
+				</ArrayInfo>
+				<BitSize>176</BitSize>
+				<BitOffs>16</BitOffs>
+			</SubItem>
+		</DataType>
+	</DataTypes>
 	<Project GUID="{28EFC5A4-66A3-462A-93EA-9B1C0893EC54}" Name="sample_delivery" PrjFilePath="..\..\sample_delivery\sample_delivery.plcproj" TmcFilePath="..\..\sample_delivery\sample_delivery.tmc" ReloadTmc="true" AmsPort="851" FileArchiveSettings="#x000e" SymbolicMapping="true">
 		<Instance Id="#x08502000" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" TmcPath="sample_delivery\sample_delivery.tmc">
 			<Name>sample_delivery Instance</Name>
 			<CLSID ClassFactory="TcPlc30">{08500001-0000-0000-F000-000000000064}</CLSID>
 			<Vars VarGrpType="1">
 				<Name>PlcTask Inputs</Name>
+				<Var>
+					<Name>GVL_SDS.fb_4PortViciValve_01.fbNporValve.stViciSerial.stComIn</Name>
+					<Type GUID="{30041C4F-8D9C-4C0A-9A8A-33894F3F936D}" Namespace="lcls_twincat_sample_delivery.Tc2_SerialCom">EL6inData22B</Type>
+				</Var>
+				<Var>
+					<Name>GVL_SDS.fb_4PortViciValve_02.fbNporValve.stViciSerial.stComIn</Name>
+					<Type GUID="{30041C4F-8D9C-4C0A-9A8A-33894F3F936D}" Namespace="lcls_twincat_sample_delivery.Tc2_SerialCom">EL6inData22B</Type>
+				</Var>
 				<Var>
 					<Name>GVL_SDS.SolenoidPairA.i_xEpics</Name>
 					<Comment>
@@ -31,15 +95,23 @@
 					<Type>BOOL</Type>
 				</Var>
 				<Var>
+					<Name>GVL_SDS.PURGE_VRC_02_CTL</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>GVL_SDS.fb_4PortViciValve_01.fbNporValve.stViciSerial.stComOut</Name>
+					<Type GUID="{2A3132B6-0851-49EF-B04F-75670C297774}" Namespace="lcls_twincat_sample_delivery.Tc2_SerialCom">EL6outData22B</Type>
+				</Var>
+				<Var>
+					<Name>GVL_SDS.fb_4PortViciValve_02.fbNporValve.stViciSerial.stComOut</Name>
+					<Type GUID="{2A3132B6-0851-49EF-B04F-75670C297774}" Namespace="lcls_twincat_sample_delivery.Tc2_SerialCom">EL6outData22B</Type>
+				</Var>
+				<Var>
 					<Name>GVL_SDS.SolenoidPairA.q_xDO1</Name>
 					<Type>BOOL</Type>
 				</Var>
 				<Var>
 					<Name>GVL_SDS.SolenoidPairA.q_xDO2</Name>
-					<Type>BOOL</Type>
-				</Var>
-				<Var>
-					<Name>GVL_SDS.PURGE_VRC_02_CTL</Name>
 					<Type>BOOL</Type>
 				</Var>
 			</Vars>
@@ -51,11 +123,59 @@
 	</Project>
 	<Mappings>
 		<OwnerA Name="sample_delivery Instance">
+			<OwnerB Name="TIID^Device 1 (EtherCAT)^Box 3 (EP9128-0021)^Term 16 (EP6002-0002)">
+				<Link VarA="PlcTask Inputs^GVL_SDS.fb_4PortViciValve_01.fbNporValve.stViciSerial.stComIn^D[0]" VarB="COM TxPDO-Map Inputs Channel 2^Data In 0" AutoLink="true"/>
+				<Link VarA="PlcTask Inputs^GVL_SDS.fb_4PortViciValve_01.fbNporValve.stViciSerial.stComIn^D[10]" VarB="COM TxPDO-Map Inputs Channel 2^Data In 10" AutoLink="true"/>
+				<Link VarA="PlcTask Inputs^GVL_SDS.fb_4PortViciValve_01.fbNporValve.stViciSerial.stComIn^D[11]" VarB="COM TxPDO-Map Inputs Channel 2^Data In 11" AutoLink="true"/>
+				<Link VarA="PlcTask Inputs^GVL_SDS.fb_4PortViciValve_01.fbNporValve.stViciSerial.stComIn^D[12]" VarB="COM TxPDO-Map Inputs Channel 2^Data In 12" AutoLink="true"/>
+				<Link VarA="PlcTask Inputs^GVL_SDS.fb_4PortViciValve_01.fbNporValve.stViciSerial.stComIn^D[13]" VarB="COM TxPDO-Map Inputs Channel 2^Data In 13" AutoLink="true"/>
+				<Link VarA="PlcTask Inputs^GVL_SDS.fb_4PortViciValve_01.fbNporValve.stViciSerial.stComIn^D[14]" VarB="COM TxPDO-Map Inputs Channel 2^Data In 14" AutoLink="true"/>
+				<Link VarA="PlcTask Inputs^GVL_SDS.fb_4PortViciValve_01.fbNporValve.stViciSerial.stComIn^D[15]" VarB="COM TxPDO-Map Inputs Channel 2^Data In 15" AutoLink="true"/>
+				<Link VarA="PlcTask Inputs^GVL_SDS.fb_4PortViciValve_01.fbNporValve.stViciSerial.stComIn^D[16]" VarB="COM TxPDO-Map Inputs Channel 2^Data In 16" AutoLink="true"/>
+				<Link VarA="PlcTask Inputs^GVL_SDS.fb_4PortViciValve_01.fbNporValve.stViciSerial.stComIn^D[17]" VarB="COM TxPDO-Map Inputs Channel 2^Data In 17" AutoLink="true"/>
+				<Link VarA="PlcTask Inputs^GVL_SDS.fb_4PortViciValve_01.fbNporValve.stViciSerial.stComIn^D[18]" VarB="COM TxPDO-Map Inputs Channel 2^Data In 18" AutoLink="true"/>
+				<Link VarA="PlcTask Inputs^GVL_SDS.fb_4PortViciValve_01.fbNporValve.stViciSerial.stComIn^D[19]" VarB="COM TxPDO-Map Inputs Channel 2^Data In 19" AutoLink="true"/>
+				<Link VarA="PlcTask Inputs^GVL_SDS.fb_4PortViciValve_01.fbNporValve.stViciSerial.stComIn^D[1]" VarB="COM TxPDO-Map Inputs Channel 2^Data In 1" AutoLink="true"/>
+				<Link VarA="PlcTask Inputs^GVL_SDS.fb_4PortViciValve_01.fbNporValve.stViciSerial.stComIn^D[20]" VarB="COM TxPDO-Map Inputs Channel 2^Data In 20" AutoLink="true"/>
+				<Link VarA="PlcTask Inputs^GVL_SDS.fb_4PortViciValve_01.fbNporValve.stViciSerial.stComIn^D[21]" VarB="COM TxPDO-Map Inputs Channel 2^Data In 21" AutoLink="true"/>
+				<Link VarA="PlcTask Inputs^GVL_SDS.fb_4PortViciValve_01.fbNporValve.stViciSerial.stComIn^D[2]" VarB="COM TxPDO-Map Inputs Channel 2^Data In 2" AutoLink="true"/>
+				<Link VarA="PlcTask Inputs^GVL_SDS.fb_4PortViciValve_01.fbNporValve.stViciSerial.stComIn^D[3]" VarB="COM TxPDO-Map Inputs Channel 2^Data In 3" AutoLink="true"/>
+				<Link VarA="PlcTask Inputs^GVL_SDS.fb_4PortViciValve_01.fbNporValve.stViciSerial.stComIn^D[4]" VarB="COM TxPDO-Map Inputs Channel 2^Data In 4" AutoLink="true"/>
+				<Link VarA="PlcTask Inputs^GVL_SDS.fb_4PortViciValve_01.fbNporValve.stViciSerial.stComIn^D[5]" VarB="COM TxPDO-Map Inputs Channel 2^Data In 5" AutoLink="true"/>
+				<Link VarA="PlcTask Inputs^GVL_SDS.fb_4PortViciValve_01.fbNporValve.stViciSerial.stComIn^D[6]" VarB="COM TxPDO-Map Inputs Channel 2^Data In 6" AutoLink="true"/>
+				<Link VarA="PlcTask Inputs^GVL_SDS.fb_4PortViciValve_01.fbNporValve.stViciSerial.stComIn^D[7]" VarB="COM TxPDO-Map Inputs Channel 2^Data In 7" AutoLink="true"/>
+				<Link VarA="PlcTask Inputs^GVL_SDS.fb_4PortViciValve_01.fbNporValve.stViciSerial.stComIn^D[8]" VarB="COM TxPDO-Map Inputs Channel 2^Data In 8" AutoLink="true"/>
+				<Link VarA="PlcTask Inputs^GVL_SDS.fb_4PortViciValve_01.fbNporValve.stViciSerial.stComIn^D[9]" VarB="COM TxPDO-Map Inputs Channel 2^Data In 9" AutoLink="true"/>
+				<Link VarA="PlcTask Inputs^GVL_SDS.fb_4PortViciValve_01.fbNporValve.stViciSerial.stComIn^Status" VarB="COM TxPDO-Map Inputs Channel 2^Status" AutoLink="true"/>
+				<Link VarA="PlcTask Outputs^GVL_SDS.fb_4PortViciValve_01.fbNporValve.stViciSerial.stComOut^Ctrl" VarB="COM RxPDO-Map Outputs Channel 2^Ctrl" AutoLink="true"/>
+				<Link VarA="PlcTask Outputs^GVL_SDS.fb_4PortViciValve_01.fbNporValve.stViciSerial.stComOut^D[0]" VarB="COM RxPDO-Map Outputs Channel 2^Data Out 0" AutoLink="true"/>
+				<Link VarA="PlcTask Outputs^GVL_SDS.fb_4PortViciValve_01.fbNporValve.stViciSerial.stComOut^D[10]" VarB="COM RxPDO-Map Outputs Channel 2^Data Out 10" AutoLink="true"/>
+				<Link VarA="PlcTask Outputs^GVL_SDS.fb_4PortViciValve_01.fbNporValve.stViciSerial.stComOut^D[11]" VarB="COM RxPDO-Map Outputs Channel 2^Data Out 11" AutoLink="true"/>
+				<Link VarA="PlcTask Outputs^GVL_SDS.fb_4PortViciValve_01.fbNporValve.stViciSerial.stComOut^D[12]" VarB="COM RxPDO-Map Outputs Channel 2^Data Out 12" AutoLink="true"/>
+				<Link VarA="PlcTask Outputs^GVL_SDS.fb_4PortViciValve_01.fbNporValve.stViciSerial.stComOut^D[13]" VarB="COM RxPDO-Map Outputs Channel 2^Data Out 13" AutoLink="true"/>
+				<Link VarA="PlcTask Outputs^GVL_SDS.fb_4PortViciValve_01.fbNporValve.stViciSerial.stComOut^D[14]" VarB="COM RxPDO-Map Outputs Channel 2^Data Out 14" AutoLink="true"/>
+				<Link VarA="PlcTask Outputs^GVL_SDS.fb_4PortViciValve_01.fbNporValve.stViciSerial.stComOut^D[15]" VarB="COM RxPDO-Map Outputs Channel 2^Data Out 15" AutoLink="true"/>
+				<Link VarA="PlcTask Outputs^GVL_SDS.fb_4PortViciValve_01.fbNporValve.stViciSerial.stComOut^D[16]" VarB="COM RxPDO-Map Outputs Channel 2^Data Out 16" AutoLink="true"/>
+				<Link VarA="PlcTask Outputs^GVL_SDS.fb_4PortViciValve_01.fbNporValve.stViciSerial.stComOut^D[17]" VarB="COM RxPDO-Map Outputs Channel 2^Data Out 17" AutoLink="true"/>
+				<Link VarA="PlcTask Outputs^GVL_SDS.fb_4PortViciValve_01.fbNporValve.stViciSerial.stComOut^D[18]" VarB="COM RxPDO-Map Outputs Channel 2^Data Out 18" AutoLink="true"/>
+				<Link VarA="PlcTask Outputs^GVL_SDS.fb_4PortViciValve_01.fbNporValve.stViciSerial.stComOut^D[19]" VarB="COM RxPDO-Map Outputs Channel 2^Data Out 19" AutoLink="true"/>
+				<Link VarA="PlcTask Outputs^GVL_SDS.fb_4PortViciValve_01.fbNporValve.stViciSerial.stComOut^D[1]" VarB="COM RxPDO-Map Outputs Channel 2^Data Out 1" AutoLink="true"/>
+				<Link VarA="PlcTask Outputs^GVL_SDS.fb_4PortViciValve_01.fbNporValve.stViciSerial.stComOut^D[20]" VarB="COM RxPDO-Map Outputs Channel 2^Data Out 20" AutoLink="true"/>
+				<Link VarA="PlcTask Outputs^GVL_SDS.fb_4PortViciValve_01.fbNporValve.stViciSerial.stComOut^D[21]" VarB="COM RxPDO-Map Outputs Channel 2^Data Out 21" AutoLink="true"/>
+				<Link VarA="PlcTask Outputs^GVL_SDS.fb_4PortViciValve_01.fbNporValve.stViciSerial.stComOut^D[2]" VarB="COM RxPDO-Map Outputs Channel 2^Data Out 2" AutoLink="true"/>
+				<Link VarA="PlcTask Outputs^GVL_SDS.fb_4PortViciValve_01.fbNporValve.stViciSerial.stComOut^D[3]" VarB="COM RxPDO-Map Outputs Channel 2^Data Out 3" AutoLink="true"/>
+				<Link VarA="PlcTask Outputs^GVL_SDS.fb_4PortViciValve_01.fbNporValve.stViciSerial.stComOut^D[4]" VarB="COM RxPDO-Map Outputs Channel 2^Data Out 4" AutoLink="true"/>
+				<Link VarA="PlcTask Outputs^GVL_SDS.fb_4PortViciValve_01.fbNporValve.stViciSerial.stComOut^D[5]" VarB="COM RxPDO-Map Outputs Channel 2^Data Out 5" AutoLink="true"/>
+				<Link VarA="PlcTask Outputs^GVL_SDS.fb_4PortViciValve_01.fbNporValve.stViciSerial.stComOut^D[6]" VarB="COM RxPDO-Map Outputs Channel 2^Data Out 6" AutoLink="true"/>
+				<Link VarA="PlcTask Outputs^GVL_SDS.fb_4PortViciValve_01.fbNporValve.stViciSerial.stComOut^D[7]" VarB="COM RxPDO-Map Outputs Channel 2^Data Out 7" AutoLink="true"/>
+				<Link VarA="PlcTask Outputs^GVL_SDS.fb_4PortViciValve_01.fbNporValve.stViciSerial.stComOut^D[8]" VarB="COM RxPDO-Map Outputs Channel 2^Data Out 8" AutoLink="true"/>
+				<Link VarA="PlcTask Outputs^GVL_SDS.fb_4PortViciValve_01.fbNporValve.stViciSerial.stComOut^D[9]" VarB="COM RxPDO-Map Outputs Channel 2^Data Out 9" AutoLink="true"/>
+			</OwnerB>
 			<OwnerB Name="TIID^Device 1 (EtherCAT)^Box 3 (EP9128-0021)^Term 5 (EP9128-2021)^Solenoid Pair A Digital IO (EP2338-0001)">
-				<Link VarA="PlcTask Outputs^GVL_SDS.PURGE_VRC_01_CTL" VarB="Channel 11^Output" AutoLink="true"/>
-				<Link VarA="PlcTask Outputs^GVL_SDS.PURGE_VRC_02_CTL" VarB="Channel 12^Output" AutoLink="true"/>
-				<Link VarA="PlcTask Outputs^GVL_SDS.SolenoidPairA.q_xDO1" VarB="Channel 9^Output" AutoLink="true"/>
-				<Link VarA="PlcTask Outputs^GVL_SDS.SolenoidPairA.q_xDO2" VarB="Channel 10^Output" AutoLink="true"/>
+				<Link VarA="PlcTask Outputs^GVL_SDS.PURGE_VRC_01_CTL" VarB="Channel 12^Output" AutoLink="true"/>
+				<Link VarA="PlcTask Outputs^GVL_SDS.PURGE_VRC_02_CTL" VarB="Channel 13^Output" AutoLink="true"/>
+				<Link VarA="PlcTask Outputs^GVL_SDS.SolenoidPairA.q_xDO1" VarB="Channel 10^Output" AutoLink="true"/>
+				<Link VarA="PlcTask Outputs^GVL_SDS.SolenoidPairA.q_xDO2" VarB="Channel 11^Output" AutoLink="true"/>
 			</OwnerB>
 		</OwnerA>
 	</Mappings>

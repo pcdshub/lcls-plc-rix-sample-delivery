@@ -62,7 +62,7 @@
   </ItemGroup>
   <ItemGroup>
     <PlaceholderResolution Include="lcls-twincat-sample-delivery">
-      <Resolution>lcls-twincat-sample-delivery, 0.0.0 (SLAC)</Resolution>
+      <Resolution>lcls-twincat-sample-delivery, 1.0.0 (SLAC)</Resolution>
     </PlaceholderResolution>
     <PlaceholderResolution Include="Tc2_Standard">
       <Resolution>Tc2_Standard, 3.3.2.0 (Beckhoff Automation GmbH)</Resolution>

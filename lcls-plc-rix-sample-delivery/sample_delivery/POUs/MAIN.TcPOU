@@ -6,21 +6,10 @@ VAR
 END_VAR
 ]]></Declaration>
     <Implementation>
-      <ST><![CDATA[(*M3SelectorA();
-M3SelectorB();
-M3SelectorC();
-M3SelectorD();
-PCMA();
-PCMB();
-PCMC();
-PCMD();
-GasMan();
-BronkhorstA();
-BronkhorstB();
-BronkhorstC();
-BronkhorstD();
-*)
-SolenoidPairA();
+      <ST><![CDATA[SolenoidPairA();
+
+fb_4PortViciValve_01(iAdress:=1);
+fb_4PortViciValve_02(iAdress:=2);
 
 (* Following execution of all the programs, set the first pass false *)
 g_xFirstPass := FALSE;]]></ST>
