@@ -4,8 +4,8 @@
 #         Project: lcls-plc-rix-sample-delivery.tsproj
 #        PLC name: sample_delivery (sample_delivery Instance)
 # Generated using: pytmc 2.17.0
-# Project version: 65f4760
-#    Project hash: 65f4760dc898c521ca470ce6315548ad2336085e
+# Project version: 4ed3630
+#    Project hash: 4ed363009fb0ca933a3c146d4d27c697cf3dbfb7
 #     PLC IP/host: 172.21.140.88
 #      PLC Net ID: 172.21.140.88.1.1
 # ** DEVELOPMENT MODE IOC **
@@ -14,7 +14,7 @@
 #
 # Libraries:
 #
-#   lcls-twincat-sample-delivery: * -> 0.0.0 (SLAC)
+#   lcls-twincat-sample-delivery: * -> 1.0.0 (SLAC)
 #   Tc2_Standard: * -> 3.3.2.0 (Beckhoff Automation GmbH)
 #   Tc2_System: * -> 3.4.24.0 (Beckhoff Automation GmbH)
 #   Tc3_Module: * -> 3.3.18.0 (Beckhoff Automation GmbH)
@@ -37,7 +37,7 @@ epicsEnvSet("ASYN_PORT",        "ASYN_PLC")
 epicsEnvSet("IPADDR",           "172.21.140.88")
 epicsEnvSet("AMSID",            "172.21.140.88.1.1")
 epicsEnvSet("AMS_PORT",         "851")
-epicsEnvSet("ADS_MAX_PARAMS",   "1018")
+epicsEnvSet("ADS_MAX_PARAMS",   "1038")
 epicsEnvSet("ADS_SAMPLE_MS",    "50")
 epicsEnvSet("ADS_MAX_DELAY_MS", "100")
 epicsEnvSet("ADS_TIMEOUT_MS",   "1000")
@@ -83,10 +83,10 @@ dbLoadRecords("TwinCAT_TaskInfo.db", "PORT=$(ASYN_PORT),PREFIX=PLC:sample_delive
 dbLoadRecords("TwinCAT_TaskInfo.db", "PORT=$(ASYN_PORT),PREFIX=PLC:sample_delivery,IDX=2")
 dbLoadRecords("TwinCAT_AppInfo.db", "PORT=$(ASYN_PORT), PREFIX=PLC:sample_delivery")
 
-dbLoadRecords("TwinCAT_Project.db", "PREFIX=PLC:sample_delivery,PROJECT=lcls-plc-rix-sample-delivery.tsproj,HASH=65f4760,VERSION=65f4760,PYTMC=2.17.0,PLC_HOST=172.21.140.88")
+dbLoadRecords("TwinCAT_Project.db", "PREFIX=PLC:sample_delivery,PROJECT=lcls-plc-rix-sample-delivery.tsproj,HASH=4ed3630,VERSION=4ed3630,PYTMC=2.17.0,PLC_HOST=172.21.140.88")
 
-#   lcls-twincat-sample-delivery: * -> 0.0.0 (SLAC)
-dbLoadRecords("TwinCAT_Dependency.db", "PREFIX=PLC:sample_delivery,DEPENDENCY=lcls-twincat-sample-delivery,VERSION=0.0.0,VENDOR=SLAC")
+#   lcls-twincat-sample-delivery: * -> 1.0.0 (SLAC)
+dbLoadRecords("TwinCAT_Dependency.db", "PREFIX=PLC:sample_delivery,DEPENDENCY=lcls-twincat-sample-delivery,VERSION=1.0.0,VENDOR=SLAC")
 #   Tc2_Standard: * -> 3.3.2.0 (Beckhoff Automation GmbH)
 dbLoadRecords("TwinCAT_Dependency.db", "PREFIX=PLC:sample_delivery,DEPENDENCY=Tc2_Standard,VERSION=3.3.2.0,VENDOR=Beckhoff Automation GmbH")
 #   Tc2_System: * -> 3.4.24.0 (Beckhoff Automation GmbH)
@@ -99,8 +99,8 @@ cd "$(IOC_TOP)"
 ## PLC Project Database files ##
 dbLoadRecords("sample_delivery.db", "PORT=$(ASYN_PORT),PREFIX=PLC:sample_delivery:,IOCNAME=$(IOC),IOC=$(IOC)")
 
-# Total records: 18
-callbackSetQueueSize(2036)
+# Total records: 38
+callbackSetQueueSize(2076)
 
 # Autosave and archive settings:
 save_restoreSet_status_prefix("PLC:sample_delivery:")
