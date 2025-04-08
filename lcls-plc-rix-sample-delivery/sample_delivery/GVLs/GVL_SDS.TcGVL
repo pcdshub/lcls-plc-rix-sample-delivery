@@ -49,60 +49,11 @@
 							  .fbNporValve.stViciSerial.stComOut.D[18] := TIIB[Term 16 (EP6002-0002)]^COM RxPDO-Map Outputs Channel 2^Data Out 18;
 							  .fbNporValve.stViciSerial.stComOut.D[19] := TIIB[Term 16 (EP6002-0002)]^COM RxPDO-Map Outputs Channel 2^Data Out 19;
 							  .fbNporValve.stViciSerial.stComOut.D[20] := TIIB[Term 16 (EP6002-0002)]^COM RxPDO-Map Outputs Channel 2^Data Out 20;
-							  .fbNporValve.stViciSerial.stComOut.D[21] := TIIB[Term 16 (EP6002-0002)]^COM RxPDO-Map Outputs Channel 2^Data Out 21
+							  .fbNporValve.stViciSerial.stComOut.D[21] := TIIB[Term 16 (EP6002-0002)]^COM RxPDO-Map Outputs Channel 2^Data Out 21;
 
     '}
-    fb_4PortViciValve_01 : FB_4PortViciValve;
 
-	{attribute 'pytmc' := 'pv: CRIX:SDS:VICI:02'}
-	{attribute 'TcLinkTo' := '.fbNporValve.stViciSerial.stComIn.Status := TIIB[Term 13 (EP6002-0002)]^COM TxPDO-Map Inputs Channel 2^Status;
-                              .fbNporValve.stViciSerial.stComOut.Ctrl := TIIB[Term 13 (EP6002-0002)]^COM RxPDO-Map Outputs Channel 2^Ctrl;
-							  .fbNporValve.stViciSerial.stComIn.D[0] := TIIB[Term 13 (EP6002-0002)]^COM TxPDO-Map Inputs Channel 2^Data In 0;
-							  .fbNporValve.stViciSerial.stComIn.D[1] := TIIB[Term 13 (EP6002-0002)]^COM TxPDO-Map Inputs Channel 2^Data In 1;
-							  .fbNporValve.stViciSerial.stComIn.D[2] := TIIB[Term 13 (EP6002-0002)]^COM TxPDO-Map Inputs Channel 2^Data In 2;
-							  .fbNporValve.stViciSerial.stComIn.D[3] := TIIB[Term 13 (EP6002-0002)]^COM TxPDO-Map Inputs Channel 2^Data In 3;
-							  .fbNporValve.stViciSerial.stComIn.D[4] := TIIB[Term 13 (EP6002-0002)]^COM TxPDO-Map Inputs Channel 2^Data In 4;
-							  .fbNporValve.stViciSerial.stComIn.D[5] := TIIB[Term 13 (EP6002-0002)]^COM TxPDO-Map Inputs Channel 2^Data In 5;
-							  .fbNporValve.stViciSerial.stComIn.D[6] := TIIB[Term 13 (EP6002-0002)]^COM TxPDO-Map Inputs Channel 2^Data In 6;
-							  .fbNporValve.stViciSerial.stComIn.D[7] := TIIB[Term 13 (EP6002-0002)]^COM TxPDO-Map Inputs Channel 2^Data In 7;
-							  .fbNporValve.stViciSerial.stComIn.D[8] := TIIB[Term 13 (EP6002-0002)]^COM TxPDO-Map Inputs Channel 2^Data In 8;
-							  .fbNporValve.stViciSerial.stComIn.D[9] := TIIB[Term 13 (EP6002-0002)]^COM TxPDO-Map Inputs Channel 2^Data In 9;
-							  .fbNporValve.stViciSerial.stComIn.D[10] := TIIB[Term 13 (EP6002-0002)]^COM TxPDO-Map Inputs Channel 2^Data In 10;
-							  .fbNporValve.stViciSerial.stComIn.D[11] := TIIB[Term 13 (EP6002-0002)]^COM TxPDO-Map Inputs Channel 2^Data In 11;
-							  .fbNporValve.stViciSerial.stComIn.D[12] := TIIB[Term 13 (EP6002-0002)]^COM TxPDO-Map Inputs Channel 2^Data In 12;
-							  .fbNporValve.stViciSerial.stComIn.D[13] := TIIB[Term 13 (EP6002-0002)]^COM TxPDO-Map Inputs Channel 2^Data In 13;
-							  .fbNporValve.stViciSerial.stComIn.D[14] := TIIB[Term 13 (EP6002-0002)]^COM TxPDO-Map Inputs Channel 2^Data In 14;
-							  .fbNporValve.stViciSerial.stComIn.D[15] := TIIB[Term 13 (EP6002-0002)]^COM TxPDO-Map Inputs Channel 2^Data In 15;
-							  .fbNporValve.stViciSerial.stComIn.D[16] := TIIB[Term 13 (EP6002-0002)]^COM TxPDO-Map Inputs Channel 2^Data In 16;
-							  .fbNporValve.stViciSerial.stComIn.D[17] := TIIB[Term 13 (EP6002-0002)]^COM TxPDO-Map Inputs Channel 2^Data In 17;
-							  .fbNporValve.stViciSerial.stComIn.D[18] := TIIB[Term 13 (EP6002-0002)]^COM TxPDO-Map Inputs Channel 2^Data In 18;
-							  .fbNporValve.stViciSerial.stComIn.D[19] := TIIB[Term 13 (EP6002-0002)]^COM TxPDO-Map Inputs Channel 2^Data In 19;
-							  .fbNporValve.stViciSerial.stComIn.D[20] := TIIB[Term 13 (EP6002-0002)]^COM TxPDO-Map Inputs Channel 2^Data In 20;
-							  .fbNporValve.stViciSerial.stComIn.D[21] := TIIB[Term 13 (EP6002-0002)]^COM TxPDO-Map Inputs Channel 2^Data In 21;								
-							  .fbNporValve.stViciSerial.stComOut.D[0] := TIIB[Term 13 (EP6002-0002)]^COM RxPDO-Map Outputs Channel 2^Data Out 0;
-							  .fbNporValve.stViciSerial.stComOut.D[1] := TIIB[Term 13 (EP6002-0002)]^COM RxPDO-Map Outputs Channel 2^Data Out 1;
-							  .fbNporValve.stViciSerial.stComOut.D[2] := TIIB[Term 13 (EP6002-0002)]^COM RxPDO-Map Outputs Channel 2^Data Out 2;
-							  .fbNporValve.stViciSerial.stComOut.D[3] := TIIB[Term 13 (EP6002-0002)]^COM RxPDO-Map Outputs Channel 2^Data Out 3;
-							  .fbNporValve.stViciSerial.stComOut.D[4] := TIIB[Term 13 (EP6002-0002)]^COM RxPDO-Map Outputs Channel 2^Data Out 4;
-							  .fbNporValve.stViciSerial.stComOut.D[5] := TIIB[Term 13 (EP6002-0002)]^COM RxPDO-Map Outputs Channel 2^Data Out 5;
-							  .fbNporValve.stViciSerial.stComOut.D[6] := TIIB[Term 13 (EP6002-0002)]^COM RxPDO-Map Outputs Channel 2^Data Out 6;
-							  .fbNporValve.stViciSerial.stComOut.D[7] := TIIB[Term 13 (EP6002-0002)]^COM RxPDO-Map Outputs Channel 2^Data Out 7;
-							  .fbNporValve.stViciSerial.stComOut.D[8] := TIIB[Term 13 (EP6002-0002)]^COM RxPDO-Map Outputs Channel 2^Data Out 8;
-							  .fbNporValve.stViciSerial.stComOut.D[9] := TIIB[Term 13 (EP6002-0002)]^COM RxPDO-Map Outputs Channel 2^Data Out 9;
-							  .fbNporValve.stViciSerial.stComOut.D[10] := TIIB[Term 13 (EP6002-0002)]^COM RxPDO-Map Outputs Channel 2^Data Out 10;
-							  .fbNporValve.stViciSerial.stComOut.D[11] := TIIB[Term 13 (EP6002-0002)]^COM RxPDO-Map Outputs Channel 2^Data Out 11;
-							  .fbNporValve.stViciSerial.stComOut.D[12] := TIIB[Term 13 (EP6002-0002)]^COM RxPDO-Map Outputs Channel 2^Data Out 12;
-							  .fbNporValve.stViciSerial.stComOut.D[13] := TIIB[Term 13 (EP6002-0002)]^COM RxPDO-Map Outputs Channel 2^Data Out 13;
-							  .fbNporValve.stViciSerial.stComOut.D[14] := TIIB[Term 13 (EP6002-0002)]^COM RxPDO-Map Outputs Channel 2^Data Out 14;
-							  .fbNporValve.stViciSerial.stComOut.D[15] := TIIB[Term 13 (EP6002-0002)]^COM RxPDO-Map Outputs Channel 2^Data Out 15;
-							  .fbNporValve.stViciSerial.stComOut.D[16] := TIIB[Term 13 (EP6002-0002)]^COM RxPDO-Map Outputs Channel 2^Data Out 16;
-							  .fbNporValve.stViciSerial.stComOut.D[17] := TIIB[Term 13 (EP6002-0002)]^COM RxPDO-Map Outputs Channel 2^Data Out 17;
-							  .fbNporValve.stViciSerial.stComOut.D[18] := TIIB[Term 13 (EP6002-0002)]^COM RxPDO-Map Outputs Channel 2^Data Out 18;
-							  .fbNporValve.stViciSerial.stComOut.D[19] := TIIB[Term 13 (EP6002-0002)]^COM RxPDO-Map Outputs Channel 2^Data Out 19;
-							  .fbNporValve.stViciSerial.stComOut.D[20] := TIIB[Term 13 (EP6002-0002)]^COM RxPDO-Map Outputs Channel 2^Data Out 20;
-							  .fbNporValve.stViciSerial.stComOut.D[21] := TIIB[Term 13 (EP6002-0002)]^COM RxPDO-Map Outputs Channel 2^Data Out 21
-    '}
-    fb_4PortViciValve_02 : FB_4PortViciValve;
+	fb_4PortViciValve_01 : FB_4PortViciValve;
 
 	{attribute 'pytmc' := 'pv: RIX:SDS:SPR:A'}
 	{attribute 'TcLinkTo' := '.q_xDO1 := TIIB[Solenoid Pair A Digital IO (EP2338-0001)]^Channel 10^Output;

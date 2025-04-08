@@ -67,10 +67,6 @@
 					<Type GUID="{30041C4F-8D9C-4C0A-9A8A-33894F3F936D}" Namespace="lcls_twincat_sample_delivery.Tc2_SerialCom">EL6inData22B</Type>
 				</Var>
 				<Var>
-					<Name>GVL_SDS.fb_4PortViciValve_02.fbNporValve.stViciSerial.stComIn</Name>
-					<Type GUID="{30041C4F-8D9C-4C0A-9A8A-33894F3F936D}" Namespace="lcls_twincat_sample_delivery.Tc2_SerialCom">EL6inData22B</Type>
-				</Var>
-				<Var>
 					<Name>GVL_SDS.SolenoidPairA.i_xEpics</Name>
 					<Comment>
 						<![CDATA[ open A when False, open B when True]]>
@@ -100,10 +96,6 @@
 				</Var>
 				<Var>
 					<Name>GVL_SDS.fb_4PortViciValve_01.fbNporValve.stViciSerial.stComOut</Name>
-					<Type GUID="{2A3132B6-0851-49EF-B04F-75670C297774}" Namespace="lcls_twincat_sample_delivery.Tc2_SerialCom">EL6outData22B</Type>
-				</Var>
-				<Var>
-					<Name>GVL_SDS.fb_4PortViciValve_02.fbNporValve.stViciSerial.stComOut</Name>
 					<Type GUID="{2A3132B6-0851-49EF-B04F-75670C297774}" Namespace="lcls_twincat_sample_delivery.Tc2_SerialCom">EL6outData22B</Type>
 				</Var>
 				<Var>
