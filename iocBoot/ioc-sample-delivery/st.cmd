@@ -1,11 +1,11 @@
-#!/reg/g/pcds/epics/ioc/common/ads-ioc/R0.6.1/bin/rhel7-x86_64/adsIoc
+#!/reg/g/pcds/epics/ioc/common/ads-ioc/R0.8.0/bin/rhel7-x86_64/adsIoc
 ################### AUTO-GENERATED DO NOT EDIT ###################
 #
 #         Project: lcls-plc-rix-sample-delivery.tsproj
 #        PLC name: sample_delivery (sample_delivery Instance)
 # Generated using: pytmc 2.17.0
-# Project version: 4ed3630
-#    Project hash: 4ed363009fb0ca933a3c146d4d27c697cf3dbfb7
+# Project version: 7f75f5f
+#    Project hash: 7f75f5f1992466b420748acaa4ef49c8bcfef586
 #     PLC IP/host: 172.21.140.88
 #      PLC Net ID: 172.21.140.88.1.1
 # ** DEVELOPMENT MODE IOC **
@@ -79,11 +79,11 @@ dbLoadRecords("save_restoreStatus.db", "P=PLC:sample_delivery:")
 dbLoadRecords("caPutLog.db", "IOC=$(IOC)")
 
 ## TwinCAT task, application, and project information databases ##
-dbLoadRecords("TwinCAT_TaskInfo.db", "PORT=$(ASYN_PORT),PREFIX=PLC:sample_delivery,IDX=1")
-dbLoadRecords("TwinCAT_TaskInfo.db", "PORT=$(ASYN_PORT),PREFIX=PLC:sample_delivery,IDX=2")
+dbLoadRecords("TwinCAT_TaskInfo.db", "PORT=$(ASYN_PORT),PREFIX=PLC:sample_delivery,IDX=1,TASK_PORT=351")
+dbLoadRecords("TwinCAT_TaskInfo.db", "PORT=$(ASYN_PORT),PREFIX=PLC:sample_delivery,IDX=2,TASK_PORT=350")
 dbLoadRecords("TwinCAT_AppInfo.db", "PORT=$(ASYN_PORT), PREFIX=PLC:sample_delivery")
 
-dbLoadRecords("TwinCAT_Project.db", "PREFIX=PLC:sample_delivery,PROJECT=lcls-plc-rix-sample-delivery.tsproj,HASH=4ed3630,VERSION=4ed3630,PYTMC=2.17.0,PLC_HOST=172.21.140.88")
+dbLoadRecords("TwinCAT_Project.db", "PREFIX=PLC:sample_delivery,PROJECT=lcls-plc-rix-sample-delivery.tsproj,HASH=7f75f5f,VERSION=7f75f5f,PYTMC=2.17.0,PLC_HOST=172.21.140.88")
 
 #   lcls-twincat-sample-delivery: * -> 1.0.0 (SLAC)
 dbLoadRecords("TwinCAT_Dependency.db", "PREFIX=PLC:sample_delivery,DEPENDENCY=lcls-twincat-sample-delivery,VERSION=1.0.0,VENDOR=SLAC")
