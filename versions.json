@@ -1,1 +1,1 @@
-{"folders": ["master"], "default-branch": "master", "labels": {"master": "master"}, "versions": ["master"], "warnings": {"master": ["unreleased"]}, "latest": null, "downloads": {"master": []}}
+{"folders": ["R.1.0.1", "master"], "default-branch": "master", "labels": {"R.1.0.1": "R.1.0.1", "master": "master"}, "versions": ["master", "R.1.0.1"], "warnings": {"R.1.0.1": ["unreleased"], "master": ["unreleased"]}, "latest": null, "downloads": {"R.1.0.1": [], "master": []}}
